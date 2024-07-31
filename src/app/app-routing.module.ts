@@ -31,7 +31,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'destination', pathMatch: 'full' } // Default child route
     ]
   },
-  { path: '**', redirectTo: '/home' }, // Wildcard route for 404
+  { path: '**', redirectTo: '' }, // Wildcard route for 404
 ];
 
 @NgModule({
