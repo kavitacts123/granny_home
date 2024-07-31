@@ -14,7 +14,7 @@ import { HotelListComponent } from './form2/hotel-list/hotel-list.component';
 import { PaymentComponent } from './form2/payment/payment.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '/granny_home', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'booking-form', component: BookingFormComponent },
