@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
+// Import your components
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
@@ -14,7 +17,7 @@ import { HotelListComponent } from './form2/hotel-list/hotel-list.component';
 import { PaymentComponent } from './form2/payment/payment.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'booking-form', component: BookingFormComponent },
@@ -28,14 +31,15 @@ const routes: Routes = [
       { path: 'rooms', component: RoomsComponent },
       { path: 'peoples', component: PeoplesComponent },
       { path: 'payment', component: PaymentComponent },
-      { path: '', redirectTo: 'destination', pathMatch: 'full' } // Default child route
+      { path: '', redirectTo: 'destination', pathMatch: 'full' }
     ]
   },
-  { path: '**', redirectTo: '' }, // Wildcard route for 404
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
 })
 export class AppRoutingModule { }
