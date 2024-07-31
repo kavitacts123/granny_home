@@ -1,0 +1,41 @@
+$ git checkout -b gh-pages
+$ git push origin gh-pages
+$ npm install -g angular-cli-ghpages`
+$ ng build --prod --base-href https://[username].github.io/[repo]/`
+$ ngh --dir=dist/[project-name]`
+
+"outputPath": "docs/granny-homes"
+ng build --configuration production --base-href "https://kavitacts123.github.io/granny_h/"
+ls docs/granny-homes
+mkdir -p docs/granny-homes
+touch docs/granny-homes/.nojekyll
+ngh --dir=docs/granny-homes
+
+step 1:
+"architect": {
+  "build": {
+    "options": {
+      "outputPath": "docs/granny-homes",
+      "baseHref": "/granny_h/"
+    }
+  }
+}
+step2:
+ng build --configuration production --base-href "https://kavitacts123.github.io/granny_h/"
+
+step3:
+ls docs/granny-homes
+
+step4:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <h1>Deployment Test</h1>
+</body>
+</html>
+
+step5:
+ngh --dir=docs/granny-homes

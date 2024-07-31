@@ -23,10 +23,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/granny_home",
+            "outputPath": "docs/granny_home",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/granny_home/",
+             "baseHref": "/granny_home/",
             "polyfills": [
               "zone.js"
             ],
@@ -42,6 +42,7 @@
                 "input": "src/",
                 "output": "/"
               }
+              
             ],
             "styles": [
               "src/styles.css",
