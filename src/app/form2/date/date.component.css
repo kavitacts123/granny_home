@@ -1,5 +1,53 @@
 /* Style for the container */
 
+h4 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.datepicker-wrapper {
+  position: relative;
+}
+
+.datepicker-wrapper .form-control {
+  padding-right: 40px; /* Space for the calendar button */
+}
+
+.datepicker-wrapper .calendar-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust as necessary */
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.datepicker-wrapper .calendar-btn i {
+  font-size: 16px;
+}
+
+.alert {
+  margin-top: 5px;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left_btn, .right_btn {
+  display: flex;
+  align-items: center;
+}
+
+.left_btn button, .right_btn button {
+  margin: 0 5px;
+}
 
 .date {
     margin-top: 100px;
@@ -15,13 +63,24 @@
   
   /* You can add global styles to this file, and also import other style files */
   .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #208678;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f3fcfb;
   }
+  button.btn.btn-primary {
+    background-color: #4b4b4b;
+    border-color: #4b4b4b;
+  }
+
+  button.btn.btn-succes {
+    margin-top: 10px;
+    background-color: #208678;
+    color: white;
+  }
+
   h1{
     font-size: 40px;
   }
@@ -31,10 +90,13 @@
   h3{
     font-size: 28px;
   }
-  h4{
+  h4 {
     font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
     font-weight: 800;
-  }
+    color: #208678;
+}
   h5{
     font-size: 20px;
   }
@@ -50,70 +112,26 @@
   h2 {
     margin-bottom: 20px;
   }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Style for the form fields */
-  mat-form-field {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  /* Style for the input fields */
-  .mat-input-element {
-    font-size: 16px;
-    /* Adjust font size */
-    color: #333;
-    /* Adjust text color */
-  }
-  
-  /* Style for the datepicker toggle icon */
-  .mat-datepicker-toggle {
-    color: #007bff;
-    /* Customize toggle icon color */
-    cursor: pointer;
-    /* Change cursor to pointer */
-  }
-  
-  /* Style for the submit button */
-  button {
-    margin-top: 20px;
-  }
-  
-  /* Hover effect for the submit button */
-  
-  button.btn.btn-success {
-    padding: 4px 20px;
-  
-  }
-  
-  button.btn.btn-primary {
-    padding: 4px 20px;
-  
-  }
-  
-  .submit {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  .right_btn {
-    margin-left: auto;
-  }
-  
-  
-  @media only screen and (max-width: 991px){
-    .date {
-      width: 80%;
-    }
-    }
-    
-    @media only screen and (max-width: 991px){
-    .date {
-      width: 100%;
-    }
-    }
+  /* date.component.css */
+.datepicker-wrapper {
+  position: relative;
+}
+
+.datepicker-wrapper .calendar {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Make sure it's on top of other elements */
+}
+
+.datepicker-wrapper .form-control {
+  padding-right: 40px; /* Adjust padding to make room for the button */
+}
+
+.datepicker-wrapper .ngb-dp {
+  position: absolute;
+  top: 100%; /* Ensure the date picker appears below the input */
+  left: 0;
+  z-index: 1000; /* Make sure the date picker is above other content */
+}

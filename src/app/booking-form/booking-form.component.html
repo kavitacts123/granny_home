@@ -1,7 +1,7 @@
 <div class="form1">
-    <h2> Booking-form </h2>
+    <div class="container">
       <form class="booking-form" #bookingForm="ngForm" (ngSubmit)="submitForm(bookingForm); showAlert()">
-  
+        <h2> Booking-form </h2>
       <div class="form-heading">
         <div class="row">
           <div class="col-md-6">
@@ -131,7 +131,7 @@
             <img class="upload_img" src="../../assets/images/drop.jpeg">
           </div>
           <div>
-            <h5 class="drop_input">Drug and drop file here</h5>
+            <h5 class="drop_input">Drag and drop file here</h5>
           </div>
         </div>
         <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
@@ -139,7 +139,8 @@
         </ngx-dropzone-preview>
       </ngx-dropzone>
       <div class="submit">
-      <button class="btn btn-success">Submit</button>
+      <button class="btn btn-succes">Submit</button>
       </div>
     </form>
+    </div>
   </div>

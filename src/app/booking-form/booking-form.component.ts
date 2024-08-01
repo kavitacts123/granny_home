@@ -38,9 +38,17 @@ export class BookingFormComponent implements OnInit {
     return null;
   }
 
-  onSelect(event: any) {
-    this.files.push(...event.addedFiles);
-  }
+  onSelect(event: any) {  
+    console.log(event);  
+    this.files.push(...event.addedFiles);  
+
+    const formData = new FormData();  
+  
+    for (var i = 0; i < this.files.length; i++) {   
+      formData.append("file[]", this.files[i]);  
+    }
+  }  
+ 
 
   onRemove(event: any) {
     this.files.splice(this.files.indexOf(event), 1);

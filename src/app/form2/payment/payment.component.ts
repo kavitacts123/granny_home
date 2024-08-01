@@ -12,6 +12,11 @@ export class PaymentComponent {
   selectedBookingType: string = '';
   selectedPrice: number | undefined;
   totalPrice: number = 0;
+  paypalEmail: string = ''; 
+  cardNumber: string = '';
+  holderName: string = '';
+  ccv: string = '';
+  expiryDate: string = '';
   bookingTypes = [
     { id: 1, name: 'Standard', price: 1000 },
     { id: 2, name: 'Deluxe', price: 1500 },

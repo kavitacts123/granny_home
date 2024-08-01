@@ -27,6 +27,7 @@ export class RoomsComponent {
     if (this.roomsFormIsValid()) {
       console.log('Form submitted:', this.rooms);
       // Perform further actions like saving to backend or navigating
+      this.router.navigate(['form2/payment']);
     } else {
       console.error('Form is invalid');
     }

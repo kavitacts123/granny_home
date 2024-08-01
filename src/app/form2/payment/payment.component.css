@@ -57,22 +57,22 @@
     width: 45%;
   }
   
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-  }
-  
-  .btn-success {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-  }
+  button.btn.btn-success {
+    padding: 4px 20px;
+    background-color: #208678;
+}
+button.btn.btn-primary {
+  background-color: #4b4b4b;
+  border-color: #4b4b4b;
+}
   
   .btn-primary:hover,
   .btn-success:hover {
     opacity: 0.8;
   }
+  button.btn.btn-primary {
+    background-color: #4b4b4b;
+}
   
   .text-danger {
     color: #dc3545;
@@ -93,10 +93,6 @@
     padding: 20px;
     border-radius: 8px;
 }
-.card_1{
-    display: block;
-    margin-right: 20px;
-}
 input[type=text] {
     width: 100%;
     padding: 10px 20px;
@@ -106,7 +102,7 @@ input[type=text] {
 }
 
 input#date, input#ccv, input#text, input#cardNumber, select#bookingType, input#expiryDate,input#name {
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -137,12 +133,12 @@ input#totalPrice {
 
 /* You can add global styles to this file, and also import other style files */
 .container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #208678;
+  border-radius: 8px;
+  background-color: #f3fcfb;
   }
   h1{
     font-size: 40px;
@@ -153,8 +149,12 @@ input#totalPrice {
   h3{
     font-size: 28px;
   }
-  h4{
+  h4 {
     font-size: 23px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: #208678;
   }
   h5{
     font-size: 20px;

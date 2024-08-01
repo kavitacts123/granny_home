@@ -3,12 +3,12 @@
     margin-top: 50px;
 }
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #208678;
+  border-radius: 8px;
+  background-color: #f3fcfb;
   }
   
   h2 {
@@ -92,9 +92,8 @@
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #208678;
   border-radius: 8px;
-  background-color: #f9f9f9;
 }
 h1{
   font-size: 40px;
@@ -105,9 +104,21 @@ h2{
 h3{
   font-size: 28px;
 }
-h4{
+h4 {
   font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
   font-weight: 800;
+  color: #208678;
+}
+
+button.btn.btn-succes {
+  background-color: #208678;
+  color: white;
+}
+button.btn.btn-primary {
+  background-color: #4b4b4b;
+  border-color: #4b4b4b;
 }
 h5{
   font-size: 20px;

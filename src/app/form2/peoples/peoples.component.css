@@ -1,188 +1,142 @@
-/* person-form.component.css */
-
 .peoples {
-    margin-top: 50px;
-  }
-  
-  /* Align form fields in a row */
-  .form-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  /* Style the remove button */
-  .remove-button {
-    margin-top: 8px;
-  }
-  
-  /* Style the add button */
-  .add-button {
-    margin-top: 16px;
-  }
-  
-  /* Style the overall form container */
-  .person-form {
-    background-color: #f8f9fa;
-    /* Light gray background */
-    padding: 20px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    /* Padding around the whole form */
-    margin-top: 100px;
-  }
-  
-  input {
-    margin-top: 10px;
-  }
-  
-  /* Style individual person form fields */
-  .mat-form-field {
-    width: 50%;
-  }
-  
-  button.btn.btn-primary {
-    padding: 4px 20px;
-  }
-  
-  input#document0 {
-    font-weight: 600;
-  }
-  
-  label {
-    margin-top: 15px;
-    font-weight: 600;
-  }
-  
-  /* Style the primary button */
-  .primary-button {
-    margin-top: 16px;
-    padding: 4px 20px;
-  }
-  
-  button.btn.btn-success {
-    padding: 4px 20px;
-  
-  }
-  
-  button.btn.btn-secondary {
-    margin-bottom: 80px;
-    margin-top: 20px;
-    padding: 4px 20px;
-  }
-  
-  .button1 {
-    display: block;
-    margin-left: 60px;
-    /* padding: 10px; */
-    margin-top: 50px;
-  }
-  
-  .submit {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  .right_btn {
-    margin-left: auto;
-    padding: 4px 20px;
-  }
-  
-  .left_btn {
-    padding: 4px 20px;
-  }
-  
-  .addperson {
-    display: block;
-  }
-  
-  .person_sec {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 20px;
-  }
-  
-  /* You can add global styles to this file, and also import other style files */
-  .person-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-  
-  h1 {
-    font-size: 40px;
-  }
-  
-  h2 {
-    font-size: 35px;
-  }
-  
-  h3 {
-    font-size: 28px;
-  }
-  
-  h4 {
-    font-size: 23px;
-    font-weight: 800;
-  }
-  
-  h5 {
-    font-size: 20px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  label {
-    font-size: 16px;
-  }
-  
-  .btn {
-    font-size: 18px;
-  }
-  
-  button.btn.btn-primary {
-    padding: 4px 20px;
-  }
-  
-  
-  
-  
-  @media only screen and (max-width: 991px) {
-    .person-form {
-      width: 80%;
-    }
-  }
-  
-  @media only screen and (max-width: 575px) {
-    .person-form {
-      width: 100%;
-    }
-  
-    .button1 {
-      display: block;
-      margin-left: 0px;
-      margin-top: 10px;
-    }
-  
-    .btn_remove {
-      margin-top: 20px;
-      margin-left: auto;
-    }
-    .left_btn{
-      padding: 0;
-  }
-  .right_btn{
-    padding: 0;
-  }
-  button.btn.btn-secondary[_ngcontent-ng-c2940343992] {
-      margin-bottom: 0;
-      margin-top: 20px;
-      padding: 4px 20px;
-  }
-  }
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #208678;
+  border-radius: 8px;
+  background-color: white;
+}
+
+h4 {
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: #208678;
+}
+
+button.btn.btn-succes {
+  background-color: #208678;
+  color: white;
+}
+button.btn.btn-primary {
+  background-color: #4b4b4b;
+  border-color: #4b4b4b;
+}
+
+.person_sec {
+  margin-bottom: 20px;
+  width: 450px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f3fcfb;
+}
+
+.addperson {
+  margin-bottom: 15px;
+}
+
+.form-control, .form-control-file {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.text-danger {
+  color: red;
+  font-size: 0.875rem; /* Adjust the size as needed */
+  margin-top: 0.25rem; /* Space between input and error message */
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.button-group .btn {
+  margin: 5px 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.add button.btn.btn-succes {
+  width: 100%;
+  padding: 10px 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.clear .button-group .btn i {
+  font-size: 20px;
+}
+
+.button-group .btn i {
+  font-size: 1.5em; /* Adjust size as needed */
+}
+.clear {
+  text-align: right;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left_btn, .right_btn {
+  display: flex;
+  align-items: center;
+}
+
+.left_btn button, .right_btn button {
+  margin: 0 5px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: black;
+  color: white;
+  border-color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+img.upload_img {
+  height: 80px;
+}
+
+ngx-dropzone {
+  height: 180px;
+  text-align: center;
+}
+.upload {
+  width: 100%;
+}
+ngx-dropzone-label {
+  overflow: auto;
+}
+.file_preview {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  max-width: 100px;
+  min-height: 100px;
+  min-width: 150px;
+  padding: 0px 20px;
+  position: relative;
+}
+

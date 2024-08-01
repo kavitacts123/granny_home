@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-
-// Import your components
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { BookingFormComponent } from './booking-form/booking-form.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
-import { BookingFormComponent } from './booking-form/booking-form.component';
 import { Form2Component } from './form2/form2.component';
 import { DestinationComponent } from './form2/destination/destination.component';
 import { DateComponent } from './form2/date/date.component';
@@ -17,7 +14,7 @@ import { HotelListComponent } from './form2/hotel-list/hotel-list.component';
 import { PaymentComponent } from './form2/payment/payment.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'booking-form', component: BookingFormComponent },
@@ -31,15 +28,14 @@ const routes: Routes = [
       { path: 'rooms', component: RoomsComponent },
       { path: 'peoples', component: PeoplesComponent },
       { path: 'payment', component: PaymentComponent },
-      { path: '', redirectTo: 'destination', pathMatch: 'full' }
+      { path: '', redirectTo: 'destination', pathMatch: 'full' } // Default child route
     ]
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: '' }, // Wildcard route for 404
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
-  exports: [RouterModule],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
