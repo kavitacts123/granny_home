@@ -2424,16 +2424,17 @@ class PaymentComponent {
     }];
   }
   submitForm(form) {
-    if (form.valid && this.selectedPaymentMethod !== '') {
-      console.log('Form submitted successfully!', form.value);
-      form.resetForm();
-      this.showAlert();
-    } else {
-      console.error('Form is invalid or no payment method selected');
+    if (form.valid) {
+      // Handle the form submission logic here
+      console.log('Form submitted:', form.value);
     }
   }
+  handleFormSubmit(form) {
+    this.submitForm(form);
+    this.showAlert();
+  }
   showAlert() {
-    alert('Form submitted successfully!');
+    alert('Form submitted!');
   }
   updatePriceList() {
     this.selectedPrice = this.bookingTypes.find(type => type.name === this.selectedBookingType)?.price;
@@ -2466,7 +2467,7 @@ class PaymentComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function PaymentComponent_Template_form_ngSubmit_5_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1);
           const bookingForm_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
-          return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx.submitForm(bookingForm_r2));
+          return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx.handleFormSubmit(bookingForm_r2));
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 12)(8, "label", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Booking Type:");
@@ -3789,6 +3790,9 @@ class LoginComponent {
       console.log(this.loginForm.value);
     }
   }
+  showAlert() {
+    alert('Form submitted!');
+  }
   navigateToSignUp() {
     this.router.navigate(['/signin']);
   }
@@ -3808,7 +3812,8 @@ class LoginComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3)(5, "form", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function LoginComponent_Template_form_ngSubmit_5_listener() {
-          return ctx.onSubmit();
+          ctx.onSubmit();
+          return ctx.showAlert();
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "label", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Email address");
@@ -3898,7 +3903,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ 4456);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 7580);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 316);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 5072);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 316);
+
 
 
 
@@ -3981,8 +3988,9 @@ function SigninComponent_div_18_Template(rf, ctx) {
   }
 }
 class SigninComponent {
-  constructor(fb) {
+  constructor(fb, router) {
     this.fb = fb;
+    this.router = router;
   }
   ngOnInit() {
     this.signUpForm = this.fb.group({
@@ -3993,6 +4001,17 @@ class SigninComponent {
       validator: this.passwordMatchValidator
     });
   }
+  onSubmit() {
+    if (this.signUpForm.valid) {
+      // Handle successful form submission
+      console.log(this.signUpForm.value);
+      // Optionally navigate to another page
+      // this.router.navigate(['/some-route']);
+    }
+  }
+  showAlert() {
+    alert('Form submitted!');
+  }
   passwordMatchValidator(group) {
     const password = group.get('password');
     const confirmPassword = group.get('confirmPassword');
@@ -4000,13 +4019,8 @@ class SigninComponent {
       mismatch: true
     };
   }
-  onSubmit() {
-    if (this.signUpForm.valid) {
-      console.log(this.signUpForm.value);
-    }
-  }
   static #_ = this.ɵfac = function SigninComponent_Factory(t) {
-    return new (t || SigninComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormBuilder));
+    return new (t || SigninComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__.Router));
   };
   static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: SigninComponent,
@@ -4021,7 +4035,8 @@ class SigninComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3)(5, "form", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function SigninComponent_Template_form_ngSubmit_5_listener() {
-          return ctx.onSubmit();
+          ctx.onSubmit();
+          return ctx.showAlert();
         });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "label", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Email address");
@@ -4060,7 +4075,7 @@ class SigninComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.signUpForm.invalid);
       }
     },
-    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlName],
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_1__.FormControlName],
     styles: [".sign[_ngcontent-%COMP%] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 150px;\n    margin-bottom: 80px;\n}\n\n\n\n.sign_text[_ngcontent-%COMP%]::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: rgba(0, 0, 0, 0.5); \n\n    filter: blur(8px); \n\n    z-index: -1; \n\n}\n\n.sign_text[_ngcontent-%COMP%] {\n    background: rgba(255, 255, 255, 0.9); \n    border-radius: 10px; \n    padding: 20px;\n    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); \n    max-width: 400px; \n    width: 100%;\n    z-index: 1; \n    background: url('bg1-img.webp') no-repeat center center; \n    background-size: cover;\n    position: relative;\n}\n\n\n.heading[_ngcontent-%COMP%] {\n    text-align: center;\n    margin-bottom: 20px; \n    color: white;\n    font-weight: 800;\n}\n\n.form-label[_ngcontent-%COMP%] {\n    margin-bottom: 5px; \n    color: white;\n}\n\n.form-control[_ngcontent-%COMP%] {\n    margin-bottom: 15px; \n}\n\n.form-control[_ngcontent-%COMP%]:focus {\n    border-color: #007bff; \n\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); \n\n}\n\n.btn-success[_ngcontent-%COMP%]{\n    background-color:  #4b4b4b;\n    border:  1px solid #4b4b4b;\n    width: 100%;\n }\n .btn[_ngcontent-%COMP%]:hover{\n     background-color: #4b4b4b;\n     border:  1px solid #4b4b4b;\n }\n\n\n @media only screen and (max-width: 991px) {\n    .sign[_ngcontent-%COMP%] {\n        width: 100%;\n    }\n}\n\n@media only screen and (max-width: 767px) {}\n\n@media only screen and (max-width: 575px) {\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc2lnbmluL3NpZ25pbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7O0FBRUEsbUNBQW1DO0FBQ25DO0lBQ0ksV0FBVztJQUNYLGtCQUFrQjtJQUNsQixNQUFNO0lBQ04sT0FBTztJQUNQLFdBQVc7SUFDWCxZQUFZO0lBQ1osOEJBQThCLEVBQUUsOEJBQThCO0lBQzlELGlCQUFpQixFQUFFLG1DQUFtQztJQUN0RCxXQUFXLEVBQUUscUNBQXFDO0FBQ3REOztBQUVBO0lBQ0ksb0NBQW9DO0lBQ3BDLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUNBQXVDO0lBQ3ZDLGdCQUFnQjtJQUNoQixXQUFXO0lBQ1gsVUFBVTtJQUNWLHVEQUEyRTtJQUMzRSxzQkFBc0I7SUFDdEIsa0JBQWtCO0FBQ3RCOzs7QUFHQTtJQUNJLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kscUJBQXFCLEVBQUUsOEJBQThCO0lBQ3JELGdEQUFnRCxFQUFFLHdCQUF3QjtBQUM5RTs7QUFFQTtJQUNJLDBCQUEwQjtJQUMxQiwwQkFBMEI7SUFDMUIsV0FBVztDQUNkO0NBQ0E7S0FDSSx5QkFBeUI7S0FDekIsMEJBQTBCO0NBQzlCOzs7Q0FHQTtJQUNHO1FBQ0ksV0FBVztJQUNmO0FBQ0o7O0FBRUEsMkNBQTJDOztBQUUzQztBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5zaWduIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tdG9wOiAxNTBweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDgwcHg7XHJcbn1cclxuXHJcbi8qIE92ZXJsYXkgdG8gYmx1ciB0aGUgYmFja2dyb3VuZCAqL1xyXG4uc2lnbl90ZXh0OjpiZWZvcmUge1xyXG4gICAgY29udGVudDogJyc7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7IC8qIERhcmsgb3ZlcmxheSB3aXRoIG9wYWNpdHkgKi9cclxuICAgIGZpbHRlcjogYmx1cig4cHgpOyAvKiBBZGp1c3QgYmx1ciBzdHJlbmd0aCBhcyBuZWVkZWQgKi9cclxuICAgIHotaW5kZXg6IC0xOyAvKiBQbGFjZSBvdmVybGF5IGJlaGluZCB0aGUgY29udGVudCAqL1xyXG59XHJcblxyXG4uc2lnbl90ZXh0IHtcclxuICAgIGJhY2tncm91bmQ6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45KTsgXHJcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4OyBcclxuICAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDAgMTBweCByZ2JhKDAsIDAsIDAsIDAuMik7IFxyXG4gICAgbWF4LXdpZHRoOiA0MDBweDsgXHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHotaW5kZXg6IDE7IFxyXG4gICAgYmFja2dyb3VuZDogdXJsKCcuLi8uLi9hc3NldHMvaW1hZ2VzL2JnMS1pbWcud2VicCcpIG5vLXJlcGVhdCBjZW50ZXIgY2VudGVyOyBcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuXHJcblxyXG4uaGVhZGluZyB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4OyBcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtd2VpZ2h0OiA4MDA7XHJcbn1cclxuXHJcbi5mb3JtLWxhYmVsIHtcclxuICAgIG1hcmdpbi1ib3R0b206IDVweDsgXHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi5mb3JtLWNvbnRyb2wge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTVweDsgXHJcbn1cclxuXHJcbi5mb3JtLWNvbnRyb2w6Zm9jdXMge1xyXG4gICAgYm9yZGVyLWNvbG9yOiAjMDA3YmZmOyAvKiBDaGFuZ2UgZm9jdXMgYm9yZGVyIGNvbG9yICovXHJcbiAgICBib3gtc2hhZG93OiAwIDAgMCAwLjJyZW0gcmdiYSgwLCAxMjMsIDI1NSwgMC4yNSk7IC8qIEFkanVzdCBmb2N1cyBzaGFkb3cgKi9cclxufVxyXG5cclxuLmJ0bi1zdWNjZXNze1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogICM0YjRiNGI7XHJcbiAgICBib3JkZXI6ICAxcHggc29saWQgIzRiNGI0YjtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gfVxyXG4gLmJ0bjpob3ZlcntcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGI0YjRiO1xyXG4gICAgIGJvcmRlcjogIDFweCBzb2xpZCAjNGI0YjRiO1xyXG4gfVxyXG5cclxuXHJcbiBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDk5MXB4KSB7XHJcbiAgICAuc2lnbiB7XHJcbiAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHt9XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU3NXB4KSB7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
   });
 }
