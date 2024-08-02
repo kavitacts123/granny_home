@@ -3167,6 +3167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function HeaderComponent_header_0_Template(rf, ctx) {
   if (rf & 1) {
+    const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "header")(1, "nav", 1)(2, "div", 2)(3, "a", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "img", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -3174,21 +3175,51 @@ function HeaderComponent_header_0_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "span", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "div", 7)(8, "ul", 8)(9, "li", 9)(10, "a", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_10_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](11, "Home");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](12, "li", 9)(13, "a", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_13_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](14, "About Us");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "li", 9)(16, "a", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_16_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](17, "Form 1");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "li", 9)(19, "a", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_19_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Form 2");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "li", 9)(22, "a", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_22_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Blog");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "li", 9)(25, "a", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HeaderComponent_header_0_Template_a_click_25_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r1);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵresetView"](ctx_r1.closeNavbar());
+    });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Contact");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "button", 16);
@@ -3197,9 +3228,11 @@ function HeaderComponent_header_0_Template(rf, ctx) {
   }
 }
 class HeaderComponent {
-  constructor(router, headerservicesService) {
+  constructor(router, headerservicesService, el, renderer) {
     this.router = router;
     this.headerservicesService = headerservicesService;
+    this.el = el;
+    this.renderer = renderer;
     this.showHeader = true;
     this.hideRoutes = ['/booking-form', '/form2', '/form2/destination', '/form2/hotel_list', '/form2/date', '/form2/rooms', '/form2/peoples', '/form2/payment'];
   }
@@ -3218,15 +3251,21 @@ class HeaderComponent {
       }
     });
   }
+  closeNavbar() {
+    const navbar = this.el.nativeElement.querySelector('#navbarSupportedContent');
+    if (navbar) {
+      this.renderer.setAttribute(navbar, 'class', 'collapse navbar-collapse');
+    }
+  }
   static #_ = this.ɵfac = function HeaderComponent_Factory(t) {
-    return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_headerservices_service__WEBPACK_IMPORTED_MODULE_0__.HeaderservicesService));
+    return new (t || HeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_headerservices_service__WEBPACK_IMPORTED_MODULE_0__.HeaderservicesService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2));
   };
   static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
     type: HeaderComponent,
     selectors: [["app-header"]],
     decls: 1,
     vars: 1,
-    consts: [[4, "ngIf"], [1, "navbar", "navbar-expand-lg", "sticky"], [1, "container"], [1, "navbar-brand"], ["src", "./assets/images/nav_img.png", "alt", "Logo"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav"], [1, "nav-item"], ["routerLink", "/home", "routerLinkActive", "active", 1, "nav-link"], ["routerLink", "/about", "routerLinkActive", "active", 1, "nav-link"], ["routerLink", "/booking-form", "routerLinkActive", "active", 1, "nav-link"], ["routerLink", "/form2", "routerLinkActive", "active", 1, "nav-link"], ["routerLink", "/blog", "routerLinkActive", "active", 1, "nav-link"], ["routerLink", "/contact", "routerLinkActive", "active", 1, "nav-link"], ["type", "button", 1, "btn", "btn-dark"]],
+    consts: [[4, "ngIf"], [1, "navbar", "navbar-expand-lg", "sticky"], [1, "container"], [1, "navbar-brand"], ["src", "./assets/images/nav_img.png", "alt", "Logo"], ["type", "button", "data-bs-toggle", "collapse", "data-bs-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav"], [1, "nav-item"], ["routerLink", "/home", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["routerLink", "/about", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["routerLink", "/booking-form", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["routerLink", "/form2", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["routerLink", "/blog", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["routerLink", "/contact", "routerLinkActive", "active", 1, "nav-link", 3, "click"], ["type", "button", 1, "btn", "btn-dark"]],
     template: function HeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, HeaderComponent_header_0_Template, 29, 0, "header", 0);
