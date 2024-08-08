@@ -1333,8 +1333,8 @@ class FormReceiptComponent {
   constructor() {
     this.booking = {
       hotelAddress: '123 Main St, Anytown, USA',
-      hotelPhone: '(123) 456-7890',
-      hotelEmail: 'info@grandhotel.com',
+      hotelPhone: '0123-456789',
+      hotelEmail: 'info@grannyflat.io',
       location: 'Shimla',
       bookingRef: 'XYZ123',
       checkInDate: new Date('2024-08-10'),
@@ -1552,7 +1552,7 @@ class FormReceiptComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.hotelPhone);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.hotelEmail);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.email);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](12);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.location);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
