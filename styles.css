@@ -12,6 +12,10 @@ body {
   .dark-mode .navbar {
     background-color: #208678;
 }
+
+.dark-mode .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
   
 .light-mode .navbar {
   background-color: #f3fcfb;
@@ -20,6 +24,19 @@ body {
     background-color: #208678;
     color: white;
   }
+  .dark-mode .card-title {
+    color: #4b4b4b;
+}
+.dark-mode button.btn.btn-dark {
+  background-color: #4b4b4b;
+  border: none;
+}
+.dark-mode .project_item h4 {
+  color: #4b4b4b;
+}
+.light-mode .project_item h4 {
+  color: black;
+}
   
  .light-mode span {
   color: #208678;
@@ -158,6 +175,29 @@ body {
   background-color: #f3f3f3;
  } */
 
+ .light-mode .ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+  color: black;
+}
+.dark-mode .ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid transparent;
+  color: black;
+}
+.light-mode .ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: black;
+  z-index: 2;
+}
+.dark-mode .ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: black;
+  z-index: 2;
+}
+.dark-mode .ql-picker-item {
+  color: black;
+}
+.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: #208678;
+}
+
  body.dark-mode a.navbar-brand img {
   filter: brightness(0) invert(1);
 }
@@ -175,11 +215,24 @@ body.dark-mode img.sec_img{
   filter: brightness(1.1);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 .light-mode .navbar-nav {
   background-color: white;
 }
 .dark-mode .navbar-nav{
+  background-color: #f3fcfb;
+  color: black;
+}
+.dark-mode .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: black;
+}
+.dark-mode .nav-link {
+  color: black;
+}
+.light-mode .testimonial .card {
+  background-color: white;
+}
+.dark-mode .testimonial .card {
   background-color: #208678;
 }
 }
