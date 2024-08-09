@@ -135,6 +135,12 @@ body {
 .light-mode .card{
   background-color: white;
 }
+.dark-mode .card_2 {
+  background-color: #208678;
+}
+.light-mode .card_2 {
+  background-color: white;
+}
 .light-mode .about-text h3 {
   color: #208678;
 }
@@ -151,6 +157,23 @@ body {
 /* .light-mode .owl-prev  img{
   background-color: #f3f3f3;
  } */
+
+ body.dark-mode a.navbar-brand img {
+  filter: brightness(0) invert(1);
+}
+body.dark-mode .footer img {
+  filter: brightness(0) invert(1);
+}
+body.dark-mode .grid_text img {
+  filter: brightness(0) invert(1);
+}
+
+body.dark-mode img.card_img {
+  filter: brightness(1.1);
+}
+body.dark-mode img.sec_img{
+  filter: brightness(1.1);
+}
 
 @media only screen and (max-width: 767px) {
 .light-mode .navbar-nav {
