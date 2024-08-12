@@ -264,8 +264,20 @@ p{
 .hotel-info p {
   color: black;
 }
-
-
+.dark-mode .receipt-table tbody tr:nth-child(even) {
+  background-color: #34655e9c;
+}
+.light-mode .receipt-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.dark-mode .receipt-table thead th {
+  background-color: #3ac1ae;
+  font-weight: bold;
+}
+.light-mode .receipt-table thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
 
  .light-mode .ql-toolbar.ql-snow .ql-picker-label {
   border: 1px solid transparent;
