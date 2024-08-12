@@ -1351,16 +1351,19 @@ class FormReceiptComponent {
       totalRoom: 2,
       numberOfAdults: 2,
       numberOfChildren: 2,
-      breakfast: 'Included',
-      wifi: 'Included',
-      parking: 'Not-Included',
+      breakfast1: '$500',
+      wifi1: '$300',
+      parking1: 'Not Included',
+      breakfast2: '$500',
+      wifi2: 'Not Included',
+      parking2: 'Not Included',
       firstName: 'John',
       lastName: 'Doe',
       phone: '(123) 456-7890',
       email: 'john.doe@example.com',
       guestName: 'John Doe',
       numberOfGuests: 4,
-      totalAmount: 5400,
+      totalAmount: 5300,
       paymentMethod: 'Credit Card',
       transactionId: 'ABC123456789',
       dateOfPayment: new Date('2024-08-18'),
@@ -1375,9 +1378,9 @@ class FormReceiptComponent {
   static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: FormReceiptComponent,
     selectors: [["app-form-receipt"]],
-    decls: 182,
-    vars: 33,
-    consts: [[1, "receipt"], [1, "container"], [1, "receipt-table"], ["colspan", "2"]],
+    decls: 207,
+    vars: 36,
+    consts: [[1, "receipt"], [1, "container"], [1, "receipt-table"], ["colspan", "2"], ["colspan", "3"]],
     template: function FormReceiptComponent_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "h2");
@@ -1494,55 +1497,79 @@ class FormReceiptComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "table", 2)(127, "thead")(128, "tr")(129, "th", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "table", 2)(127, "thead")(128, "tr")(129, "th", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "Additional Charges");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "tbody")(132, "tr")(133, "td")(134, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](135, "Breakfast:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "tr")(139, "td")(140, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](141, "Wifi:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](143);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](144, "tr")(145, "td")(146, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](147, "Parking:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "table", 2)(151, "thead")(152, "tr")(153, "th", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154, "Payment Information");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "thead")(132, "tr")(133, "th", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "Room 1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "tbody")(156, "tr")(157, "td")(158, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](159, "Total Amount Charged:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "tbody")(136, "tr")(137, "td")(138, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, "Breakfast:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](161);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](162, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "td")(141, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Wifi:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](163, "tr")(164, "td")(165, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](166, "Payment Method:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "td")(144, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](145, "Parking:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](146, "tr")(147, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](150);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](152);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "thead")(154, "tr")(155, "th", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156, "Room 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "tbody")(158, "tr")(159, "td")(160, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](161, "Breakfast:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](168);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](162, "td")(163, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164, "Wifi:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "tr")(170, "td")(171, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172, "Transaction ID:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "td")(166, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](167, "Parking:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](168, "tr")(169, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](170);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](171, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "table", 2)(176, "thead")(177, "tr")(178, "th", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](179, "Payment Information");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](180, "tbody")(181, "tr")(182, "td")(183, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184, "Total Amount Charged:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "tr")(176, "td")(177, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](178, "Date of Payment:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](186);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](187, "currency");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](181, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](188, "tr")(189, "td")(190, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](191, "Payment Method:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](192, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](193);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](194, "tr")(195, "td")(196, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](197, "Transaction ID:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](198, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](199);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](200, "tr")(201, "td")(202, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](203, "Date of Payment:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](205);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](206, "date");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
       }
       if (rf & 2) {
@@ -1565,33 +1592,39 @@ class FormReceiptComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.bookingRef);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](81, 23, ctx.booking.checkInDate));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](81, 26, ctx.booking.checkInDate));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](88, 25, ctx.booking.checkOutDate));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](88, 28, ctx.booking.checkOutDate));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.roomType);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](107, 27, ctx.booking.pricePerRoom));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](107, 30, ctx.booking.pricePerRoom));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.totalRoom);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.numberOfAdults);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.numberOfChildren);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.breakfast1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.wifi1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.parking1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.breakfast2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.wifi2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.parking2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.breakfast);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.wifi);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.parking);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](162, 29, ctx.booking.totalAmount));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](187, 32, ctx.booking.totalAmount));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.paymentMethod);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.booking.transactionId);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](181, 31, ctx.booking.dateOfPayment));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](206, 34, ctx.booking.dateOfPayment));
       }
     },
     dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CurrencyPipe, _angular_common__WEBPACK_IMPORTED_MODULE_1__.DatePipe],
@@ -1694,6 +1727,7 @@ class DateComponent {
     this.checkoutDate = '';
     this.minCheckinDate = '';
     this.minCheckoutDate = '';
+    this.errorMessage = ''; // Property to hold error messages
   }
   ngOnInit() {
     this.updateMinCheckinDate();
@@ -1740,11 +1774,17 @@ class DateComponent {
   // Method to validate date range
   validateDateRange() {
     if (!this.checkinDate || !this.checkoutDate) {
+      this.errorMessage = 'Both check-in and checkout dates must be selected.';
       return false;
     }
     const checkin = new Date(this.checkinDate);
     const checkout = new Date(this.checkoutDate);
-    return checkout > checkin;
+    if (checkout <= checkin) {
+      this.errorMessage = 'Checkout date must be after the check-in date.';
+      return false;
+    }
+    this.errorMessage = ''; // Clear error message if validation passes
+    return true;
   }
   static #_ = this.ɵfac = function DateComponent_Factory(t) {
     return new (t || DateComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.Router));
@@ -1836,25 +1876,25 @@ class DateComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.location);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", locationField_r3.invalid && (locationField_r3.dirty || locationField_r3.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", locationField_r3.invalid && (locationField_r3.dirty || locationField_r3.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.checkinDate);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("min", ctx.minCheckinDate);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", checkinDateField_r4.invalid && (checkinDateField_r4.dirty || checkinDateField_r4.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", checkinDateField_r4.invalid && (checkinDateField_r4.dirty || checkinDateField_r4.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.checkoutDate);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("min", ctx.minCheckoutDate);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", checkoutDateField_r5.invalid && (checkoutDateField_r5.dirty || checkoutDateField_r5.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", checkoutDateField_r5.invalid && (checkoutDateField_r5.dirty || checkoutDateField_r5.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", dateForm_r2.submitted && !ctx.validateDateRange());
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (checkoutDateField_r5.touched || dateForm_r2.submitted) && !ctx.validateDateRange());
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", dateForm_r2.invalid);
       }
     },
     dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgSelectOption, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgSelectMultipleOption"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.SelectControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgForm],
-    styles: ["\n\nlabel[_ngcontent-%COMP%] {\n  font-size: 24px;\n  color: white;\n}\n\nh1[_ngcontent-%COMP%] {\n  font-size: 90px;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-size: 70px;\n}\n\nh3[_ngcontent-%COMP%] {\n  font-size: 60px;\n}\n\nh4[_ngcontent-%COMP%] {\n  font-size: 40px;\n}\n\nh5[_ngcontent-%COMP%] {\n  font-size: 30px;\n}\n\nh6[_ngcontent-%COMP%] {\n  font-size: 20px;\n}\n\np[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\na[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\n.form-control[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n.text-danger[_ngcontent-%COMP%] {\n  color: #dc3545;\n  font-size: 24px;\n}\n\n.date[_ngcontent-%COMP%] {\n  padding: 20px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 100%;\n  \n\n}\n\n.form-group[_ngcontent-%COMP%] {\n  margin-bottom: 50px;\n  text-align: left;\n}\n\n\n\n.datepicker-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  padding-right: 40px;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  right: 10px;\n  \n\n  transform: translateY(-50%);\n  z-index: 10;\n  border: none;\n  background: none;\n  cursor: pointer;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar-btn[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.alert[_ngcontent-%COMP%] {\n  margin-top: 5px;\n}\n\n.submit[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n}\n\n.right_btn[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n\n.right_btn[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  margin: 0 5px;\n}\n\n.btn[_ngcontent-%COMP%] {\n  font-size: 24px;\n  padding: 10px 40px;\n}\n\n.validation_same[_ngcontent-%COMP%] {\n  margin-top: 10px;\n}\n\n\n\nbutton.btn.btn-primary[_ngcontent-%COMP%] {\n  background-color: #4b4b4b;\n  border-color: #4b4b4b;\n}\n\nbutton.btn.btn-succes[_ngcontent-%COMP%] {\n  margin-top: 10px;\n  background-color: #208678;\n  color: white;\n}\n\nlabel[_ngcontent-%COMP%] {\n  color: #208678;\n}\n\nh2[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 20px;\n  font-weight: 800;\n  color: #208678;\n}\n\n\n\n.datepicker-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  \n\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 10;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  padding-right: 40px;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .ngb-dp[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 100%;\n  \n\n  left: 0;\n  z-index: 1000;\n  \n\n}\n\n@media only screen and (min-width: 1441px) {}\n\n@media only screen and (max-width: 1199px) {\n  h1[_ngcontent-%COMP%] {\n    font-size: 57px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 38px;\n  }\n\n  h3[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h4[_ngcontent-%COMP%] {\n    font-size: 25px;\n  }\n\n  h5[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  h6[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  a[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n  .form-control[_ngcontent-%COMP%]{\n    font-size: 20px;\n  }\n  .text-danger[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n}\n\n@media only screen and (max-width: 991px) {\n\n  .btn[_ngcontent-%COMP%] {\n    padding: 6px 24px;\n  }\n}\n\n@media only screen and (max-width: 767px) {}\n\n@media only screen and (max-width: 575px) {\n\n  h1[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n  a[_ngcontent-%COMP%]{ \n    font-size: 18px;\n  }\n\n  label[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n\n  .form-control[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n\n  .btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 6px 24px;\n  }\n\n  .validation_same[_ngcontent-%COMP%] {\n    font-size: 12px;\n  }\n\n  .date[_ngcontent-%COMP%] {\n    margin-top: 0px;\n  }\n\n  .form-group[_ngcontent-%COMP%] {\n    margin-bottom: 10px;\n    text-align: left;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    margin-bottom: 10px;\n  }\n  .text-danger[_ngcontent-%COMP%] {\n    color: #dc3545;\n    font-size: 18px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9ybTIvZGF0ZS9kYXRlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNEJBQTRCO0FBQzVCO0VBQ0UsZUFBZTtFQUNmLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsY0FBYztFQUNkLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsaUNBQWlDO0FBQ25DOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjs7OztBQUlBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsV0FBVztFQUNYLHdCQUF3QjtFQUN4QiwyQkFBMkI7RUFDM0IsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtBQUNoQzs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLGVBQWU7RUFDZixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUEsOEVBQThFO0FBQzlFO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQix5QkFBeUI7RUFDekIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBRUEsdUJBQXVCO0FBQ3ZCO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxxQkFBcUI7RUFDckIsUUFBUTtFQUNSLDJCQUEyQjtFQUMzQixXQUFXO0VBQ1gsNENBQTRDO0FBQzlDOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLCtDQUErQztBQUNqRDs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsbURBQW1EO0VBQ25ELE9BQU87RUFDUCxhQUFhO0VBQ2IscURBQXFEO0FBQ3ZEOztBQUVBLDRDQUE0Qzs7QUFFNUM7RUFDRTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCOztBQUVGOztBQUVBOztFQUVFO0lBQ0UsaUJBQWlCO0VBQ25CO0FBQ0Y7O0FBRUEsMkNBQTJDOztBQUUzQzs7RUFFRTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtJQUNmLGlCQUFpQjtFQUNuQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsbUJBQW1CO0lBQ25CLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLG1CQUFtQjtFQUNyQjtFQUNBO0lBQ0UsY0FBYztJQUNkLGVBQWU7RUFDakI7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi8qIFN0eWxlIGZvciB0aGUgY29udGFpbmVyICovXHJcbmxhYmVsIHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgZm9udC1zaXplOiA5MHB4O1xyXG59XHJcblxyXG5oMiB7XHJcbiAgZm9udC1zaXplOiA3MHB4O1xyXG59XHJcblxyXG5oMyB7XHJcbiAgZm9udC1zaXplOiA2MHB4O1xyXG59XHJcblxyXG5oNCB7XHJcbiAgZm9udC1zaXplOiA0MHB4O1xyXG59XHJcblxyXG5oNSB7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG59XHJcblxyXG5oNiB7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG59XHJcblxyXG5wIHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuXHJcbmEge1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5cclxuLmZvcm0tY29udHJvbCB7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG59XHJcbi50ZXh0LWRhbmdlciB7XHJcbiAgY29sb3I6ICNkYzM1NDU7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG59XHJcblxyXG4uZGF0ZSB7XHJcbiAgcGFkZGluZzogMjBweDtcclxuICBtYXJnaW4tbGVmdDogYXV0bztcclxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgLyogYmFja2dyb3VuZC1jb2xvcjogIzNhYzFhZTMzOyAqL1xyXG59XHJcblxyXG4uZm9ybS1ncm91cCB7XHJcbiAgbWFyZ2luLWJvdHRvbTogNTBweDtcclxuICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG59XHJcblxyXG5cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG5cclxuLmRhdGVwaWNrZXItd3JhcHBlciAuZm9ybS1jb250cm9sIHtcclxuICBwYWRkaW5nLXJpZ2h0OiA0MHB4O1xyXG4gIC8qIFNwYWNlIGZvciB0aGUgY2FsZW5kYXIgYnV0dG9uICovXHJcbn1cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIgLmNhbGVuZGFyLWJ0biB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNTAlO1xyXG4gIHJpZ2h0OiAxMHB4O1xyXG4gIC8qIEFkanVzdCBhcyBuZWNlc3NhcnkgKi9cclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgei1pbmRleDogMTA7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIGJhY2tncm91bmQ6IG5vbmU7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4uZGF0ZXBpY2tlci13cmFwcGVyIC5jYWxlbmRhci1idG4gaSB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uYWxlcnQge1xyXG4gIG1hcmdpbi10b3A6IDVweDtcclxufVxyXG5cclxuLnN1Ym1pdCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbn1cclxuXHJcbi5yaWdodF9idG4ge1xyXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG59XHJcblxyXG4ucmlnaHRfYnRuIGJ1dHRvbiB7XHJcbiAgbWFyZ2luOiAwIDVweDtcclxufVxyXG5cclxuLmJ0biB7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggNDBweDtcclxufVxyXG5cclxuLnZhbGlkYXRpb25fc2FtZSB7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxufVxyXG5cclxuLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG5idXR0b24uYnRuLmJ0bi1wcmltYXJ5IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGI0YjRiO1xyXG4gIGJvcmRlci1jb2xvcjogIzRiNGI0YjtcclxufVxyXG5cclxuYnV0dG9uLmJ0bi5idG4tc3VjY2VzIHtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyMDg2Nzg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5sYWJlbCB7XHJcbiAgY29sb3I6ICMyMDg2Nzg7XHJcbn1cclxuXHJcbmgyIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIGNvbG9yOiAjMjA4Njc4O1xyXG59XHJcblxyXG4vKiBkYXRlLmNvbXBvbmVudC5jc3MgKi9cclxuLmRhdGVwaWNrZXItd3JhcHBlciB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uZGF0ZXBpY2tlci13cmFwcGVyIC5jYWxlbmRhciB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHJpZ2h0OiAxMHB4O1xyXG4gIC8qIEFkanVzdCBhcyBuZWVkZWQgKi9cclxuICB0b3A6IDUwJTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgei1pbmRleDogMTA7XHJcbiAgLyogTWFrZSBzdXJlIGl0J3Mgb24gdG9wIG9mIG90aGVyIGVsZW1lbnRzICovXHJcbn1cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIgLmZvcm0tY29udHJvbCB7XHJcbiAgcGFkZGluZy1yaWdodDogNDBweDtcclxuICAvKiBBZGp1c3QgcGFkZGluZyB0byBtYWtlIHJvb20gZm9yIHRoZSBidXR0b24gKi9cclxufVxyXG5cclxuLmRhdGVwaWNrZXItd3JhcHBlciAubmdiLWRwIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxMDAlO1xyXG4gIC8qIEVuc3VyZSB0aGUgZGF0ZSBwaWNrZXIgYXBwZWFycyBiZWxvdyB0aGUgaW5wdXQgKi9cclxuICBsZWZ0OiAwO1xyXG4gIHotaW5kZXg6IDEwMDA7XHJcbiAgLyogTWFrZSBzdXJlIHRoZSBkYXRlIHBpY2tlciBpcyBhYm92ZSBvdGhlciBjb250ZW50ICovXHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTQ0MXB4KSB7fVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMTk5cHgpIHtcclxuICBoMSB7XHJcbiAgICBmb250LXNpemU6IDU3cHg7XHJcbiAgfVxyXG5cclxuICBoMiB7XHJcbiAgICBmb250LXNpemU6IDM4cHg7XHJcbiAgfVxyXG5cclxuICBoMyB7XHJcbiAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgfVxyXG5cclxuICBoNCB7XHJcbiAgICBmb250LXNpemU6IDI1cHg7XHJcbiAgfVxyXG5cclxuICBoNSB7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG5cclxuICBoNiB7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG5cclxuICBwIHtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICB9XHJcblxyXG4gIGEge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuICAuZm9ybS1jb250cm9se1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuICAudGV4dC1kYW5nZXIge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuXHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTkxcHgpIHtcclxuXHJcbiAgLmJ0biB7XHJcbiAgICBwYWRkaW5nOiA2cHggMjRweDtcclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHt9XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU3NXB4KSB7XHJcblxyXG4gIGgxIHtcclxuICAgIGZvbnQtc2l6ZTogMzVweDtcclxuICB9XHJcblxyXG4gIGgyIHtcclxuICAgIGZvbnQtc2l6ZTogMzJweDtcclxuICB9XHJcblxyXG4gIHAge1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG4gIH1cclxuICBheyBcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICB9XHJcblxyXG4gIGxhYmVsIHtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxuICB9XHJcblxyXG4gIC5mb3JtLWNvbnRyb2wge1xyXG4gICAgZm9udC1zaXplOiAxNXB4O1xyXG4gIH1cclxuXHJcbiAgLmJ0biB7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBwYWRkaW5nOiA2cHggMjRweDtcclxuICB9XHJcblxyXG4gIC52YWxpZGF0aW9uX3NhbWUge1xyXG4gICAgZm9udC1zaXplOiAxMnB4O1xyXG4gIH1cclxuXHJcbiAgLmRhdGUge1xyXG4gICAgbWFyZ2luLXRvcDogMHB4O1xyXG4gIH1cclxuXHJcbiAgLmZvcm0tZ3JvdXAge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG5cclxuICBoMiB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gIH1cclxuICAudGV4dC1kYW5nZXIge1xyXG4gICAgY29sb3I6ICNkYzM1NDU7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+    styles: ["label[_ngcontent-%COMP%] {\n  font-size: 24px;\n  color: white;\n}\n\nh1[_ngcontent-%COMP%] {\n  font-size: 90px;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-size: 70px;\n}\n\nh3[_ngcontent-%COMP%] {\n  font-size: 60px;\n}\n\nh4[_ngcontent-%COMP%] {\n  font-size: 40px;\n}\n\nh5[_ngcontent-%COMP%] {\n  font-size: 30px;\n}\n\nh6[_ngcontent-%COMP%] {\n  font-size: 20px;\n}\n\np[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\na[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\n.form-control[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n.text-danger[_ngcontent-%COMP%] {\n  color: #dc3545;\n  font-size: 24px;\n}\n\n.date[_ngcontent-%COMP%] {\n  padding: 20px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 100%;\n  \n\n}\n\n.form-group[_ngcontent-%COMP%] {\n  margin-bottom: 50px;\n  text-align: left;\n}\n\n\n\n.datepicker-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  padding-right: 40px;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 50%;\n  right: 10px;\n  \n\n  transform: translateY(-50%);\n  z-index: 10;\n  border: none;\n  background: none;\n  cursor: pointer;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar-btn[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.alert[_ngcontent-%COMP%] {\n  margin-top: 5px;\n}\n\n.submit[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: space-between;\n}\n\n.right_btn[_ngcontent-%COMP%] {\n  margin-left: auto;\n}\n\n.right_btn[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  margin: 0 5px;\n}\n\n.btn[_ngcontent-%COMP%] {\n  font-size: 24px;\n  padding: 10px 40px;\n}\n\n.validation_same[_ngcontent-%COMP%] {\n  margin-top: 10px;\n}\n\n\n\nbutton.btn.btn-primary[_ngcontent-%COMP%] {\n  background-color: #4b4b4b;\n  border-color: #4b4b4b;\n}\n\nbutton.btn.btn-succes[_ngcontent-%COMP%] {\n  margin-top: 10px;\n  background-color: #208678;\n  color: white;\n}\n\nlabel[_ngcontent-%COMP%] {\n  color: #208678;\n}\n\nh2[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 20px;\n  font-weight: 800;\n  color: #208678;\n}\n\n\n\n.datepicker-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .calendar[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  \n\n  top: 50%;\n  transform: translateY(-50%);\n  z-index: 10;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .form-control[_ngcontent-%COMP%] {\n  padding-right: 40px;\n  \n\n}\n\n.datepicker-wrapper[_ngcontent-%COMP%]   .ngb-dp[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 100%;\n  \n\n  left: 0;\n  z-index: 1000;\n  \n\n}\n\n@media only screen and (min-width: 1441px) {}\n\n@media only screen and (max-width: 1199px) {\n  h1[_ngcontent-%COMP%] {\n    font-size: 57px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 38px;\n  }\n\n  h3[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h4[_ngcontent-%COMP%] {\n    font-size: 25px;\n  }\n\n  h5[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  h6[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  a[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n  .form-control[_ngcontent-%COMP%]{\n    font-size: 20px;\n  }\n  .text-danger[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n}\n\n@media only screen and (max-width: 991px) {\n\n  .btn[_ngcontent-%COMP%] {\n    padding: 6px 24px;\n  }\n}\n\n@media only screen and (max-width: 767px) {}\n\n@media only screen and (max-width: 575px) {\n\n  h1[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n  a[_ngcontent-%COMP%]{ \n    font-size: 18px;\n  }\n\n  label[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n\n  .form-control[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n\n  .btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 6px 24px;\n  }\n\n  .validation_same[_ngcontent-%COMP%] {\n    font-size: 12px;\n  }\n\n  .date[_ngcontent-%COMP%] {\n    margin-top: 0px;\n  }\n\n  .form-group[_ngcontent-%COMP%] {\n    margin-bottom: 10px;\n    text-align: left;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    margin-bottom: 10px;\n  }\n  .text-danger[_ngcontent-%COMP%] {\n    color: #dc3545;\n    font-size: 18px;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9ybTIvZGF0ZS9kYXRlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7QUFDQTtFQUNFLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGlDQUFpQztBQUNuQzs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7Ozs7QUFJQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFdBQVc7RUFDWCx3QkFBd0I7RUFDeEIsMkJBQTJCO0VBQzNCLFdBQVc7RUFDWCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7QUFDaEM7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZ0JBQWdCO0FBQ2xCOztBQUVBLDhFQUE4RTtBQUM5RTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIseUJBQXlCO0VBQ3pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUVBLHVCQUF1QjtBQUN2QjtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gscUJBQXFCO0VBQ3JCLFFBQVE7RUFDUiwyQkFBMkI7RUFDM0IsV0FBVztFQUNYLDRDQUE0QztBQUM5Qzs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQiwrQ0FBK0M7QUFDakQ7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULG1EQUFtRDtFQUNuRCxPQUFPO0VBQ1AsYUFBYTtFQUNiLHFEQUFxRDtBQUN2RDs7QUFFQSw0Q0FBNEM7O0FBRTVDO0VBQ0U7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjs7QUFFRjs7QUFFQTs7RUFFRTtJQUNFLGlCQUFpQjtFQUNuQjtBQUNGOztBQUVBLDJDQUEyQzs7QUFFM0M7O0VBRUU7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7RUFDQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7SUFDZixpQkFBaUI7RUFDbkI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLG1CQUFtQjtJQUNuQixnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSxtQkFBbUI7RUFDckI7RUFDQTtJQUNFLGNBQWM7SUFDZCxlQUFlO0VBQ2pCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbmxhYmVsIHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5oMSB7XHJcbiAgZm9udC1zaXplOiA5MHB4O1xyXG59XHJcblxyXG5oMiB7XHJcbiAgZm9udC1zaXplOiA3MHB4O1xyXG59XHJcblxyXG5oMyB7XHJcbiAgZm9udC1zaXplOiA2MHB4O1xyXG59XHJcblxyXG5oNCB7XHJcbiAgZm9udC1zaXplOiA0MHB4O1xyXG59XHJcblxyXG5oNSB7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG59XHJcblxyXG5oNiB7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG59XHJcblxyXG5wIHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuXHJcbmEge1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5cclxuLmZvcm0tY29udHJvbCB7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG59XHJcbi50ZXh0LWRhbmdlciB7XHJcbiAgY29sb3I6ICNkYzM1NDU7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG59XHJcblxyXG4uZGF0ZSB7XHJcbiAgcGFkZGluZzogMjBweDtcclxuICBtYXJnaW4tbGVmdDogYXV0bztcclxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgLyogYmFja2dyb3VuZC1jb2xvcjogIzNhYzFhZTMzOyAqL1xyXG59XHJcblxyXG4uZm9ybS1ncm91cCB7XHJcbiAgbWFyZ2luLWJvdHRvbTogNTBweDtcclxuICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG59XHJcblxyXG5cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIge1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxufVxyXG5cclxuLmRhdGVwaWNrZXItd3JhcHBlciAuZm9ybS1jb250cm9sIHtcclxuICBwYWRkaW5nLXJpZ2h0OiA0MHB4O1xyXG4gIC8qIFNwYWNlIGZvciB0aGUgY2FsZW5kYXIgYnV0dG9uICovXHJcbn1cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIgLmNhbGVuZGFyLWJ0biB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNTAlO1xyXG4gIHJpZ2h0OiAxMHB4O1xyXG4gIC8qIEFkanVzdCBhcyBuZWNlc3NhcnkgKi9cclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgei1pbmRleDogMTA7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIGJhY2tncm91bmQ6IG5vbmU7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG59XHJcblxyXG4uZGF0ZXBpY2tlci13cmFwcGVyIC5jYWxlbmRhci1idG4gaSB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uYWxlcnQge1xyXG4gIG1hcmdpbi10b3A6IDVweDtcclxufVxyXG5cclxuLnN1Ym1pdCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbn1cclxuXHJcbi5yaWdodF9idG4ge1xyXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xyXG59XHJcblxyXG4ucmlnaHRfYnRuIGJ1dHRvbiB7XHJcbiAgbWFyZ2luOiAwIDVweDtcclxufVxyXG5cclxuLmJ0biB7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggNDBweDtcclxufVxyXG5cclxuLnZhbGlkYXRpb25fc2FtZSB7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxufVxyXG5cclxuLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG5idXR0b24uYnRuLmJ0bi1wcmltYXJ5IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGI0YjRiO1xyXG4gIGJvcmRlci1jb2xvcjogIzRiNGI0YjtcclxufVxyXG5cclxuYnV0dG9uLmJ0bi5idG4tc3VjY2VzIHtcclxuICBtYXJnaW4tdG9wOiAxMHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyMDg2Nzg7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG5sYWJlbCB7XHJcbiAgY29sb3I6ICMyMDg2Nzg7XHJcbn1cclxuXHJcbmgyIHtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxuICBmb250LXdlaWdodDogODAwO1xyXG4gIGNvbG9yOiAjMjA4Njc4O1xyXG59XHJcblxyXG4vKiBkYXRlLmNvbXBvbmVudC5jc3MgKi9cclxuLmRhdGVwaWNrZXItd3JhcHBlciB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uZGF0ZXBpY2tlci13cmFwcGVyIC5jYWxlbmRhciB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHJpZ2h0OiAxMHB4O1xyXG4gIC8qIEFkanVzdCBhcyBuZWVkZWQgKi9cclxuICB0b3A6IDUwJTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgei1pbmRleDogMTA7XHJcbiAgLyogTWFrZSBzdXJlIGl0J3Mgb24gdG9wIG9mIG90aGVyIGVsZW1lbnRzICovXHJcbn1cclxuXHJcbi5kYXRlcGlja2VyLXdyYXBwZXIgLmZvcm0tY29udHJvbCB7XHJcbiAgcGFkZGluZy1yaWdodDogNDBweDtcclxuICAvKiBBZGp1c3QgcGFkZGluZyB0byBtYWtlIHJvb20gZm9yIHRoZSBidXR0b24gKi9cclxufVxyXG5cclxuLmRhdGVwaWNrZXItd3JhcHBlciAubmdiLWRwIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxMDAlO1xyXG4gIC8qIEVuc3VyZSB0aGUgZGF0ZSBwaWNrZXIgYXBwZWFycyBiZWxvdyB0aGUgaW5wdXQgKi9cclxuICBsZWZ0OiAwO1xyXG4gIHotaW5kZXg6IDEwMDA7XHJcbiAgLyogTWFrZSBzdXJlIHRoZSBkYXRlIHBpY2tlciBpcyBhYm92ZSBvdGhlciBjb250ZW50ICovXHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDogMTQ0MXB4KSB7fVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMTk5cHgpIHtcclxuICBoMSB7XHJcbiAgICBmb250LXNpemU6IDU3cHg7XHJcbiAgfVxyXG5cclxuICBoMiB7XHJcbiAgICBmb250LXNpemU6IDM4cHg7XHJcbiAgfVxyXG5cclxuICBoMyB7XHJcbiAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgfVxyXG5cclxuICBoNCB7XHJcbiAgICBmb250LXNpemU6IDI1cHg7XHJcbiAgfVxyXG5cclxuICBoNSB7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG5cclxuICBoNiB7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG5cclxuICBwIHtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICB9XHJcblxyXG4gIGEge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuICAuZm9ybS1jb250cm9se1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuICAudGV4dC1kYW5nZXIge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuXHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTkxcHgpIHtcclxuXHJcbiAgLmJ0biB7XHJcbiAgICBwYWRkaW5nOiA2cHggMjRweDtcclxuICB9XHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHt9XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU3NXB4KSB7XHJcblxyXG4gIGgxIHtcclxuICAgIGZvbnQtc2l6ZTogMzVweDtcclxuICB9XHJcblxyXG4gIGgyIHtcclxuICAgIGZvbnQtc2l6ZTogMzJweDtcclxuICB9XHJcblxyXG4gIHAge1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG4gIH1cclxuICBheyBcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICB9XHJcblxyXG4gIGxhYmVsIHtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxuICB9XHJcblxyXG4gIC5mb3JtLWNvbnRyb2wge1xyXG4gICAgZm9udC1zaXplOiAxNXB4O1xyXG4gIH1cclxuXHJcbiAgLmJ0biB7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBwYWRkaW5nOiA2cHggMjRweDtcclxuICB9XHJcblxyXG4gIC52YWxpZGF0aW9uX3NhbWUge1xyXG4gICAgZm9udC1zaXplOiAxMnB4O1xyXG4gIH1cclxuXHJcbiAgLmRhdGUge1xyXG4gICAgbWFyZ2luLXRvcDogMHB4O1xyXG4gIH1cclxuXHJcbiAgLmZvcm0tZ3JvdXAge1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG5cclxuICBoMiB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gIH1cclxuICAudGV4dC1kYW5nZXIge1xyXG4gICAgY29sb3I6ICNkYzM1NDU7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
   });
 }
 
@@ -1890,7 +1930,7 @@ function DestinationComponent_div_17_div_1_Template(rf, ctx) {
 function DestinationComponent_div_17_div_2_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "First name must be at least 2 characters long.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "First name must be at least 3 characters long.");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
   }
 }
@@ -1919,7 +1959,7 @@ function DestinationComponent_div_24_div_1_Template(rf, ctx) {
 function DestinationComponent_div_24_div_2_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Last name must be at least 2 characters long.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Last name must be at least 3 characters long.");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
   }
 }
@@ -2220,7 +2260,6 @@ class DestinationComponent {
       email: ''
     });
   }
-  // Method to remove a guest by index
   removeGuest(index) {
     if (this.formData.guests.length > 1) {
       this.formData.guests.splice(index, 1);
@@ -2266,7 +2305,7 @@ class DestinationComponent {
     selectors: [["app-destination"]],
     decls: 63,
     vars: 12,
-    consts: [["bookingForm", "ngForm"], ["firstName", "ngModel"], ["lastName", "ngModel"], ["email", "ngModel"], ["phone", "ngModel"], ["guestFirstName", "ngModel"], ["guestLastName", "ngModel"], ["guestEmail", "ngModel"], [1, "destination"], [1, "container"], [1, "dest_text"], [3, "ngSubmit"], [1, "section-header"], [1, "row"], [1, "col-md-6"], [1, "form-group"], ["for", "firstName"], ["type", "text", "id", "firstName", "name", "firstName", "required", "", "minlength", "2", 1, "form-control", 3, "ngModelChange", "ngModel"], ["class", "text-danger", 4, "ngIf"], ["for", "lastName"], ["type", "text", "id", "lastName", "name", "lastName", "required", "", "minlength", "2", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "email"], ["type", "email", "id", "email", "name", "email", "required", "", "email", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "phone"], ["type", "tel", "id", "phone", "name", "phone", "required", "", "pattern", "[0-9]{10}", 1, "form-control", 3, "ngModelChange", "ngModel"], [3, "change"], [1, "upload"], ["src", "./assets/images/drop.jpeg", "alt", "Drop file here", 1, "upload_img"], [1, "drop_input"], [3, "removable", "removed", 4, "ngFor", "ngForOf"], ["class", "error-message", 4, "ngIf"], ["class", "guest-entry", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], [1, "submit"], [1, "left_btn"], ["color", "primary", "routerLink", "/form2/rooms", 1, "btn", "btn-primary"], [1, "right_btn"], ["type", "submit", 1, "btn", "btn-success", 3, "disabled"], [1, "text-danger"], [4, "ngIf"], [3, "removed", "removable"], [1, "error-message"], [1, "guest-entry"], [3, "for"], ["type", "text", "minlength", "2", 1, "form-control", 3, "ngModelChange", "id", "name", "ngModel"], ["type", "email", "email", "", 1, "form-control", 3, "ngModelChange", "id", "name", "ngModel"], ["type", "button", "class", "btn btn-danger", 3, "click", 4, "ngIf"], ["type", "button", 1, "btn", "btn-danger", 3, "click"]],
+    consts: [["bookingForm", "ngForm"], ["firstName", "ngModel"], ["lastName", "ngModel"], ["email", "ngModel"], ["phone", "ngModel"], ["guestFirstName", "ngModel"], ["guestLastName", "ngModel"], ["guestEmail", "ngModel"], [1, "destination"], [1, "container"], [1, "dest_text"], [3, "ngSubmit"], [1, "section-header"], [1, "row"], [1, "col-md-6"], [1, "form-group"], ["for", "firstName"], ["type", "text", "id", "firstName", "name", "firstName", "required", "", "minlength", "3", 1, "form-control", 3, "ngModelChange", "ngModel"], ["class", "text-danger", 4, "ngIf"], ["for", "lastName"], ["type", "text", "id", "lastName", "name", "lastName", "required", "", "minlength", "3", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "email"], ["type", "email", "id", "email", "name", "email", "required", "", "email", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "phone"], ["type", "tel", "id", "phone", "name", "phone", "required", "", "pattern", "[0-9]{10}", 1, "form-control", 3, "ngModelChange", "ngModel"], [3, "change"], [1, "upload"], ["src", "./assets/images/drop.jpeg", "alt", "Drop file here", 1, "upload_img"], [1, "drop_input"], [3, "removable", "removed", 4, "ngFor", "ngForOf"], ["class", "error-message", 4, "ngIf"], ["class", "guest-entry", 4, "ngFor", "ngForOf"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], [1, "submit"], [1, "left_btn"], ["color", "primary", "routerLink", "/form2/rooms", 1, "btn", "btn-primary"], [1, "right_btn"], ["type", "submit", 1, "btn", "btn-success", 3, "disabled"], [1, "text-danger"], [4, "ngIf"], [3, "removed", "removable"], [1, "error-message"], [1, "guest-entry"], [3, "for"], ["type", "text", "minlength", "2", 1, "form-control", 3, "ngModelChange", "id", "name", "ngModel"], ["type", "email", "email", "", 1, "form-control", 3, "ngModelChange", "id", "name", "ngModel"], ["type", "button", "class", "btn btn-danger", 3, "click", 4, "ngIf"], ["type", "button", 1, "btn", "btn-danger", 3, "click"]],
     template: function DestinationComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -2369,19 +2408,19 @@ class DestinationComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.formData.mainPerson.firstName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", firstName_r3.invalid && (firstName_r3.dirty || firstName_r3.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", firstName_r3.invalid && (firstName_r3.dirty || firstName_r3.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.formData.mainPerson.lastName);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", lastName_r4.invalid && (lastName_r4.dirty || lastName_r4.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", lastName_r4.invalid && (lastName_r4.dirty || lastName_r4.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.formData.mainPerson.email);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", email_r5.invalid && (email_r5.dirty || email_r5.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", email_r5.invalid && (email_r5.dirty || email_r5.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx.formData.mainPerson.phone);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", phone_r6.invalid && (phone_r6.dirty || phone_r6.touched));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", phone_r6.invalid && (phone_r6.dirty || phone_r6.untouched));
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.files);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"]();
@@ -3172,8 +3211,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   PaymentComponent: () => (/* binding */ PaymentComponent)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 37580);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 95072);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ 60316);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 60316);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 95072);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ 34456);
 
 
@@ -3389,20 +3428,20 @@ function PaymentComponent_div_12_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.cardNumber);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", cardNumberField_r7.invalid && (cardNumberField_r7.dirty || cardNumberField_r7.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", cardNumberField_r7.invalid && (cardNumberField_r7.dirty || cardNumberField_r7.untouched));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.holderName);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", holderNameField_r8.invalid && (holderNameField_r8.dirty || holderNameField_r8.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", holderNameField_r8.invalid && (holderNameField_r8.dirty || holderNameField_r8.untouched));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.ccv);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ccvField_r9.invalid && (ccvField_r9.dirty || ccvField_r9.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ccvField_r9.invalid && (ccvField_r9.dirty || ccvField_r9.untouched));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.expiryDate);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("min", ctx_r3.minExpiryDate);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", expiryDateField_r10.invalid && (expiryDateField_r10.dirty || expiryDateField_r10.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", expiryDateField_r10.invalid && (expiryDateField_r10.dirty || expiryDateField_r10.untouched));
   }
 }
 function PaymentComponent_div_13_div_10_div_1_Template(rf, ctx) {
@@ -3460,7 +3499,7 @@ function PaymentComponent_div_13_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.paypalEmail);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", paypalEmailField_r12.invalid && (paypalEmailField_r12.dirty || paypalEmailField_r12.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", paypalEmailField_r12.invalid && (paypalEmailField_r12.dirty || paypalEmailField_r12.untouched));
   }
 }
 function PaymentComponent_div_14_div_10_div_1_Template(rf, ctx) {
@@ -3595,11 +3634,11 @@ function PaymentComponent_div_14_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.bankName);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", bankNameField_r14.invalid && (bankNameField_r14.dirty || bankNameField_r14.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", bankNameField_r14.invalid && (bankNameField_r14.dirty || bankNameField_r14.untouched));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.accountNumber);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", accountNumberField_r15.invalid && (accountNumberField_r15.dirty || accountNumberField_r15.touched));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", accountNumberField_r15.invalid && (accountNumberField_r15.dirty || accountNumberField_r15.untouched));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtwoWayProperty"]("ngModel", ctx_r3.ifscCode);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
@@ -3607,119 +3646,38 @@ function PaymentComponent_div_14_Template(rf, ctx) {
   }
 }
 class PaymentComponent {
-  constructor(router) {
-    this.router = router;
+  constructor() {
     this.paymentMethods = ['Credit Card', 'PayPal', 'Bank Transfer'];
     this.selectedPaymentMethod = '';
-    this.selectedBookingType = '';
-    this.totalPrice = 0;
-    this.paypalEmail = '';
+    this.selectedBookingType = ''; // Assuming you have this to control required fields
     this.cardNumber = '';
     this.holderName = '';
     this.ccv = '';
     this.expiryDate = '';
+    this.paypalEmail = '';
     this.bankName = '';
     this.accountNumber = '';
     this.ifscCode = '';
-    this.minExpiryDate = ''; // Added property for minimum expiry date
-    this.bookingTypes = [{
-      id: 1,
-      name: 'Standard',
-      price: 1000
-    }, {
-      id: 2,
-      name: 'Deluxe',
-      price: 1500
-    }, {
-      id: 3,
-      name: 'Suite',
-      price: 2000
-    }, {
-      id: 4,
-      name: 'Family Room',
-      price: 2500
-    }];
-    this.interests = [{
-      id: 1,
-      name: 'Breakfast',
-      price: 100,
-      selected: false
-    }, {
-      id: 2,
-      name: 'Laundry Services',
-      price: 200,
-      selected: false
-    }, {
-      id: 3,
-      name: 'Spa Package',
-      price: 300,
-      selected: false
-    }];
-    // Set minimum expiry date to today
-    this.minExpiryDate = new Date().toISOString().split('T')[0];
+    this.minExpiryDate = new Date().toISOString().split('T')[0]; // Minimum expiry date is today
   }
-  submitForm(form) {
-    // Check if a payment method is selected
-    if (!this.selectedPaymentMethod) {
-      alert('Please select a payment method.');
-      return; // Prevent form submission if no payment method is selected
-    }
-    // Validate payment method details based on the selected payment method
-    if (this.selectedPaymentMethod === 'Credit Card') {
-      if (!this.cardNumber || !this.holderName || !this.ccv || !this.expiryDate) {
-        alert('Please fill out all required Credit Card details.');
-        return; // Prevent form submission if Credit Card details are missing
-      }
-    } else if (this.selectedPaymentMethod === 'PayPal') {
-      if (!this.paypalEmail) {
-        alert('Please enter your PayPal email.');
-        return; // Prevent form submission if PayPal email is missing
-      }
-    } else if (this.selectedPaymentMethod === 'Bank Transfer') {
-      if (!this.bankName || !this.accountNumber || !this.ifscCode) {
-        alert('Please fill out all required Bank Transfer details.');
-        return; // Prevent form submission if Bank Transfer details are missing
-      }
-    }
-    // Proceed with form submission if all validations pass
+  handleFormSubmit(form) {
     if (form.valid) {
-      console.log('Form submitted:', {
-        selectedPaymentMethod: this.selectedPaymentMethod,
-        cardNumber: this.cardNumber,
-        holderName: this.holderName,
-        ccv: this.ccv,
-        expiryDate: this.expiryDate,
-        paypalEmail: this.paypalEmail,
-        bankName: this.bankName,
-        accountNumber: this.accountNumber,
-        ifscCode: this.ifscCode
-      });
-      // Redirect to the success page after successful form submission
-      this.router.navigate(['/successful']);
+      // Handle form submission
+      console.log('Form Submitted:', form.value);
+      // Add your form submission logic here, e.g., sending data to a server
     } else {
       console.log('Form is invalid');
     }
   }
-  // Method to handle form submission
-  handleFormSubmit(form) {
-    this.submitForm(form);
-  }
-  // Helper method to validate expiry date
-  isValidExpiryDate(expiryDate) {
-    const currentDate = new Date();
-    const [month, year] = expiryDate.split('/').map(Number);
-    const expiry = new Date(year, month - 1);
-    return expiry >= currentDate;
-  }
   static #_ = this.ɵfac = function PaymentComponent_Factory(t) {
-    return new (t || PaymentComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.Router));
+    return new (t || PaymentComponent)();
   };
   static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
     type: PaymentComponent,
     selectors: [["app-payment"]],
     decls: 22,
     vars: 6,
-    consts: [["bookingForm", "ngForm"], ["paymentMethod", "ngModel"], ["cardNumberField", "ngModel"], ["holderNameField", "ngModel"], ["ccvField", "ngModel"], ["expiryDateField", "ngModel"], ["paypalEmailField", "ngModel"], ["bankNameField", "ngModel"], ["accountNumberField", "ngModel"], ["ifscCodeField", "ngModel"], [1, "payment"], [1, "container"], [1, "payment_text"], [1, "booking-form", 3, "ngSubmit"], [1, "form-group"], ["class", "form-check", 4, "ngFor", "ngForOf"], ["class", "text-danger", 4, "ngIf"], [4, "ngIf"], [1, "submit"], [1, "left_btn"], ["routerLink", "/form2/destination", 1, "btn", "btn-primary"], [1, "right_btn"], ["type", "submit", 1, "btn", "btn-success", 3, "disabled"], [1, "form-check"], ["type", "radio", "name", "paymentMethod", 1, "form-check-input", 3, "ngModelChange", "id", "ngModel", "value", "required"], [1, "form-check-label", 3, "for"], [1, "text-danger"], [1, "card-details"], [1, "card_1"], ["for", "cardNumber"], ["type", "text", "id", "cardNumber", "name", "cardNumber", "required", "", "pattern", "[0-9]{16}", 1, "form-control", 3, "ngModelChange", "ngModel"], [1, "card_details"], [1, "row"], [1, "col-md-4"], ["for", "name"], ["type", "text", "id", "name", "name", "name", "required", "", "pattern", "[A-Za-z ]+", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "ccv"], ["type", "text", "id", "ccv", "name", "ccv", "required", "", "pattern", "[0-9]{3}", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "expiryDate"], ["type", "date", "id", "expiryDate", "name", "expiryDate", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel", "min"], ["for", "paypalEmail"], ["type", "email", "id", "paypalEmail", "name", "paypalEmail", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "bankName"], ["type", "text", "id", "bankName", "name", "bankName", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "accountNumber"], ["type", "text", "id", "accountNumber", "name", "accountNumber", "required", "", "pattern", "[0-9]{8,20}", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "ifscCode"], ["type", "text", "id", "ifscCode", "name", "ifscCode", "required", "", "pattern", "[A-Z]{4}[0-9]{7}", 1, "form-control", 3, "ngModelChange", "ngModel"]],
+    consts: [["bookingForm", "ngForm"], ["paymentMethod", "ngModel"], ["cardNumberField", "ngModel"], ["holderNameField", "ngModel"], ["ccvField", "ngModel"], ["expiryDateField", "ngModel"], ["paypalEmailField", "ngModel"], ["bankNameField", "ngModel"], ["accountNumberField", "ngModel"], ["ifscCodeField", "ngModel"], [1, "payment"], [1, "container"], [1, "payment_text"], [1, "booking-form", 3, "ngSubmit"], [1, "form-group"], ["class", "form-check", 4, "ngFor", "ngForOf"], ["class", "text-danger", 4, "ngIf"], [4, "ngIf"], [1, "submit"], [1, "left_btn"], ["routerLink", "/form2/destination", 1, "btn", "btn-primary"], [1, "right_btn"], ["type", "submit", 1, "btn", "btn-success", 3, "disabled"], [1, "form-check"], ["type", "radio", "name", "paymentMethod", 1, "form-check-input", 3, "ngModelChange", "id", "ngModel", "value", "required"], [1, "form-check-label", 3, "for"], [1, "text-danger"], [1, "card-details"], [1, "card_1"], ["for", "cardNumber"], ["type", "text", "id", "cardNumber", "name", "cardNumber", "required", "", "pattern", "[0-9]{16}", "maxlength", "16", "minlength", "16", "inputmode", "numeric", 1, "form-control", 3, "ngModelChange", "ngModel"], [1, "card_details"], [1, "row"], [1, "col-md-4"], ["for", "name"], ["type", "text", "id", "name", "name", "name", "required", "", "pattern", "[A-Za-z ]+", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "ccv"], ["type", "text", "id", "ccv", "name", "ccv", "required", "", "pattern", "[0-9]{3}", "maxlength", "3", "minlength", "3", "inputmode", "numeric", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "expiryDate"], ["type", "date", "id", "expiryDate", "name", "expiryDate", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel", "min"], ["for", "paypalEmail"], ["type", "email", "id", "paypalEmail", "name", "paypalEmail", "required", "", "email", "/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "bankName"], ["type", "text", "id", "bankName", "name", "bankName", "required", "", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "accountNumber"], ["type", "text", "id", "accountNumber", "name", "accountNumber", "required", "", "pattern", "[0-9]{8,20}", "maxlength", "20", "minlength", "8", "inputmode", "numeric", 1, "form-control", 3, "ngModelChange", "ngModel"], ["for", "ifscCode"], ["type", "text", "id", "ifscCode", "name", "ifscCode", "required", "", "pattern", "[A-Z]{4}[0-9]{7}", 1, "form-control", 3, "ngModelChange", "ngModel"]],
     template: function PaymentComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -3761,7 +3719,7 @@ class PaymentComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", bookingForm_r2.invalid);
       }
     },
-    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_2__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_2__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RadioControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.PatternValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgForm],
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgForOf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterLink, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RadioControlValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.RequiredValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.MinLengthValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.MaxLengthValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.PatternValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.EmailValidator, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgModel, _angular_forms__WEBPACK_IMPORTED_MODULE_3__.NgForm],
     styles: ["h1[_ngcontent-%COMP%] {\n  font-size: 90px;\n}\n\nh2[_ngcontent-%COMP%] {\n  font-size: 70px;\n}\n\nh3[_ngcontent-%COMP%] {\n  font-size: 60px;\n}\n\nh4[_ngcontent-%COMP%] {\n  font-size: 40px;\n  \n}\n\nh5[_ngcontent-%COMP%] {\n  font-size: 30px;\n  color: #208678;\n}\n\nh6[_ngcontent-%COMP%] {\n  font-size: 20px;\n}\n\np[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\na[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\nlabel[_ngcontent-%COMP%]{\n  font-size: 24px;\n}\n.text-danger[_ngcontent-%COMP%] {\n  color: #dc3545;\n  font-size: 24px;\n}\n\n.form-control[_ngcontent-%COMP%] {\n  font-size: 24px;\n}\n\n\n\n.payment[_ngcontent-%COMP%] {\n  text-align: left;\n  padding: 20px;\n  margin-left: auto;\n  margin-right: auto;\n  width: 100%;\n}\n.form-flex[_ngcontent-%COMP%]{\n  display: flex;\n}\n\n\n.form-group[_ngcontent-%COMP%] {\n  margin-bottom: 20px;\n}\n\nlabel[_ngcontent-%COMP%] {\n  font-weight: bold;\n  \n\n}\n\nselect[_ngcontent-%COMP%], \ninput[type=\"text\"][_ngcontent-%COMP%] {\n  width: 100%;\n  padding: 10px;\n  font-size: 20px;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n\nul[_ngcontent-%COMP%] {\n  padding-left: 0;\n}\n\n.submit[_ngcontent-%COMP%] {\n  margin-top: 20px;\n  display: flex;\n  justify-content: space-between;\n}\n\n.left_btn[_ngcontent-%COMP%] {\n  width: 45%;\n}\n\nbutton.btn.btn-success[_ngcontent-%COMP%] {\n  background-color: #208678;\n}\n\nbutton.btn.btn-primary[_ngcontent-%COMP%] {\n  background-color: #4b4b4b;\n  border-color: #4b4b4b;\n}\n\n.btn-primary[_ngcontent-%COMP%]:hover, \n.btn-success[_ngcontent-%COMP%]:hover {\n  opacity: 0.8;\n}\n\nbutton.btn.btn-primary[_ngcontent-%COMP%] {\n  background-color: #4b4b4b;\n}\n\ninput#cardNumber[_ngcontent-%COMP%] {\n  width: 100%;\n  display: block;\n}\n\n.card_details[_ngcontent-%COMP%] {\n  display: flex;\n  width: 100%;\n}\n\n.card-details[_ngcontent-%COMP%] {\n  width: 100%;\n  background-color: #dbe4ed;\n  padding: 20px;\n  border-radius: 8px;\n  color: black;\n}\n\n.card-details[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: black;\n}\n\n.card-details[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: black;\n}\n\ninput[type=text][_ngcontent-%COMP%] {\n  width: 100%;\n  padding: 10px 20px;\n  \n\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\n.form-check-input[_ngcontent-%COMP%] {\n  border-radius: 50%;\n  width: 30px;\n  height: 30px;\n  margin-right: 10px;\n}\n\ninput#date[_ngcontent-%COMP%], \ninput#ccv[_ngcontent-%COMP%], \ninput#text[_ngcontent-%COMP%], \ninput#cardNumber[_ngcontent-%COMP%], \nselect#bookingType[_ngcontent-%COMP%], \ninput#expiryDate[_ngcontent-%COMP%], \ninput#name[_ngcontent-%COMP%] {\n  padding: 10px 10px;\n  margin-bottom: 10px;\n  margin-top: 10px;\n}\n\n.card-details[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  margin-top: 10px;\n  \n\n}\n\n.card_submit[_ngcontent-%COMP%] {\n  text-align: right;\n  width: 100%;\n}\n\n.additional_services[_ngcontent-%COMP%] {\n  width: 100%;\n  list-style: none;\n  \n\n}\n\ninput#\\33[_ngcontent-%COMP%], \ninput#\\32[_ngcontent-%COMP%], \ninput#\\31[_ngcontent-%COMP%] {\n  height: 20px;\n  width: 20px;\n  margin-right: 10px;\n}\n\ninput#totalPrice[_ngcontent-%COMP%] {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n\n\n\nh2[_ngcontent-%COMP%] {\n  text-align: center;\n  margin-bottom: 20px;\n  font-weight: 800;\n  color: #208678;\n  color: #208678;\n}\n.form-check[_ngcontent-%COMP%]{\n  margin-bottom: 10px;\n}\n\n\nlabel[_ngcontent-%COMP%] {\n  color: #208678;\n}\n\n.btn[_ngcontent-%COMP%] {\n  font-size: 24px;\n  padding: 10px 40px;\n}\n\n@media only screen and (max-width: 1199px) {\n  h1[_ngcontent-%COMP%] {\n    font-size: 57px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 38px;\n  }\n\n  h3[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h4[_ngcontent-%COMP%] {\n    font-size: 25px;\n  }\n\n  h5[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n  .text-danger[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  h6[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n\n  a[_ngcontent-%COMP%] {\n    font-size: 20px;\n  }\n  label[_ngcontent-%COMP%]{\n    font-size: 20px;\n  }\n  .form-check-input[_ngcontent-%COMP%] {\n    border-radius: 50%;\n    width: 20px;\n    height: 20px;\n    margin-right: 10px;\n  }\n\n  input#date[_ngcontent-%COMP%], \n   input#ccv[_ngcontent-%COMP%], \n   input#text[_ngcontent-%COMP%], \n   input#cardNumber[_ngcontent-%COMP%], \n   select#bookingType[_ngcontent-%COMP%], \n   input#expiryDate[_ngcontent-%COMP%], \n   input#name[_ngcontent-%COMP%] {\n    padding: 5px 4px;\n    margin-bottom: 0;\n    margin-top: 10px;\n  }\n}\n\n@media only screen and (max-width: 991px) {\n\n  input#date[_ngcontent-%COMP%], \n   input#ccv[_ngcontent-%COMP%], \n   input#text[_ngcontent-%COMP%], \n   input#cardNumber[_ngcontent-%COMP%], \n   select#bookingType[_ngcontent-%COMP%], \n   input#expiryDate[_ngcontent-%COMP%], \n   input#name[_ngcontent-%COMP%] {\n    padding: 10px 10px;\n    margin-bottom: 0;\n    font-size: 16px;\n  }\n  label[_ngcontent-%COMP%]{\n    font-size: 18px;\n  }\n\n}\n\n@media only screen and (max-width: 767px) {}\n\n@media only screen and (max-width: 575px) {\n  h1[_ngcontent-%COMP%] {\n    font-size: 35px;\n  }\n\n  h2[_ngcontent-%COMP%] {\n    font-size: 32px;\n    \n  }\n  .text-danger[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n\n  p[_ngcontent-%COMP%] {\n    font-size: 18px;\n  }\n\n  label[_ngcontent-%COMP%] {\n    font-size: 15px;\n    margin-bottom: 0px;\n  }\n\n  .form-control[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n\n  select[_ngcontent-%COMP%], \n   input[type=\"text\"][_ngcontent-%COMP%] {\n    font-size: 12px;\n  }\n\n  .btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 6px 24px;\n  }\n  .payment[_ngcontent-%COMP%]{\n    padding: 10px;\n    \n}\n\n  .payment_text[_ngcontent-%COMP%] {\n    margin-top: 0;\n  }\n  .card-details[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    margin-top: 5px;\n    margin-bottom: 5px;\n    \n\n  }\n  input#date[_ngcontent-ng-c44735615][_ngcontent-%COMP%], input#ccv[_ngcontent-ng-c44735615][_ngcontent-%COMP%], input#text[_ngcontent-ng-c44735615][_ngcontent-%COMP%], input#cardNumber[_ngcontent-ng-c44735615][_ngcontent-%COMP%], select#bookingType[_ngcontent-ng-c44735615][_ngcontent-%COMP%], input#expiryDate[_ngcontent-ng-c44735615][_ngcontent-%COMP%], input#name[_ngcontent-ng-c44735615][_ngcontent-%COMP%] {\n    margin-bottom: 0;\n    margin-top: 0;\n}\n\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9ybTIvcGF5bWVudC9wYXltZW50LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlOztBQUVqQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUEsK0JBQStCO0FBQy9CO0VBQ0UsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsYUFBYTtBQUNmOzs7QUFHQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixxQkFBcUI7QUFDdkI7O0FBRUE7O0VBRUUsV0FBVztFQUNYLGFBQWE7RUFDYixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLDhCQUE4QjtBQUNoQzs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7QUFDdkI7O0FBRUE7O0VBRUUsWUFBWTtBQUNkOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsV0FBVztFQUNYLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtBQUNwQjs7QUFFQTs7Ozs7OztFQU9FLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLHdCQUF3QjtBQUMxQjs7QUFFQTs7O0VBR0UsWUFBWTtFQUNaLFdBQVc7RUFDWCxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0FBQ3JCOztBQUVBLDhFQUE4RTs7QUFFOUU7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixjQUFjO0VBQ2QsY0FBYztBQUNoQjtBQUNBO0VBQ0UsbUJBQW1CO0FBQ3JCOzs7QUFHQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0U7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osa0JBQWtCO0VBQ3BCOztFQUVBOzs7Ozs7O0lBT0UsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixnQkFBZ0I7RUFDbEI7QUFDRjs7QUFFQTs7RUFFRTs7Ozs7OztJQU9FLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZUFBZTtFQUNqQjtFQUNBO0lBQ0UsZUFBZTtFQUNqQjs7QUFFRjs7QUFFQSwyQ0FBMkM7O0FBRTNDO0VBQ0U7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTs7RUFFakI7RUFDQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUVBO0lBQ0UsZUFBZTtJQUNmLGtCQUFrQjtFQUNwQjs7RUFFQTtJQUNFLGVBQWU7RUFDakI7O0VBRUE7O0lBRUUsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGVBQWU7SUFDZixpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLGFBQWE7O0FBRWpCOztFQUVFO0lBQ0UsYUFBYTtFQUNmO0VBQ0E7SUFDRSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLHFCQUFxQjtFQUN2QjtFQUNBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGFBQWE7QUFDakI7O0FBRUEiLCJzb3VyY2VzQ29udGVudCI6WyJoMSB7XHJcbiAgZm9udC1zaXplOiA5MHB4O1xyXG59XHJcblxyXG5oMiB7XHJcbiAgZm9udC1zaXplOiA3MHB4O1xyXG59XHJcblxyXG5oMyB7XHJcbiAgZm9udC1zaXplOiA2MHB4O1xyXG59XHJcblxyXG5oNCB7XHJcbiAgZm9udC1zaXplOiA0MHB4O1xyXG4gIFxyXG59XHJcblxyXG5oNSB7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG4gIGNvbG9yOiAjMjA4Njc4O1xyXG59XHJcblxyXG5oNiB7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG59XHJcblxyXG5wIHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuXHJcbmEge1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5sYWJlbHtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuLnRleHQtZGFuZ2VyIHtcclxuICBjb2xvcjogI2RjMzU0NTtcclxuICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuXHJcbi5mb3JtLWNvbnRyb2wge1xyXG4gIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5cclxuLyogYm9va2luZy1mb3JtLmNvbXBvbmVudC5jc3MgKi9cclxuLnBheW1lbnQge1xyXG4gIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgcGFkZGluZzogMjBweDtcclxuICBtYXJnaW4tbGVmdDogYXV0bztcclxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuLmZvcm0tZmxleHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG5cclxuLmZvcm0tZ3JvdXAge1xyXG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XHJcbn1cclxuXHJcbmxhYmVsIHtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICAvKiBmb250LXNpemU6IDE1cHg7ICovXHJcbn1cclxuXHJcbnNlbGVjdCxcclxuaW5wdXRbdHlwZT1cInRleHRcIl0ge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIHBhZGRpbmc6IDEwcHg7XHJcbiAgZm9udC1zaXplOiAyMHB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XHJcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG59XHJcblxyXG51bCB7XHJcbiAgcGFkZGluZy1sZWZ0OiAwO1xyXG59XHJcblxyXG4uc3VibWl0IHtcclxuICBtYXJnaW4tdG9wOiAyMHB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG59XHJcblxyXG4ubGVmdF9idG4ge1xyXG4gIHdpZHRoOiA0NSU7XHJcbn1cclxuXHJcbmJ1dHRvbi5idG4uYnRuLXN1Y2Nlc3Mge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyMDg2Nzg7XHJcbn1cclxuXHJcbmJ1dHRvbi5idG4uYnRuLXByaW1hcnkge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0YjRiNGI7XHJcbiAgYm9yZGVyLWNvbG9yOiAjNGI0YjRiO1xyXG59XHJcblxyXG4uYnRuLXByaW1hcnk6aG92ZXIsXHJcbi5idG4tc3VjY2Vzczpob3ZlciB7XHJcbiAgb3BhY2l0eTogMC44O1xyXG59XHJcblxyXG5idXR0b24uYnRuLmJ0bi1wcmltYXJ5IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGI0YjRiO1xyXG59XHJcblxyXG5pbnB1dCNjYXJkTnVtYmVyIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLmNhcmRfZGV0YWlscyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmNhcmQtZGV0YWlscyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RiZTRlZDtcclxuICBwYWRkaW5nOiAyMHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDhweDtcclxuICBjb2xvcjogYmxhY2s7XHJcbn1cclxuXHJcbi5jYXJkLWRldGFpbHMgaDUge1xyXG4gIGNvbG9yOiBibGFjaztcclxufVxyXG5cclxuLmNhcmQtZGV0YWlscyBsYWJlbCB7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG5pbnB1dFt0eXBlPXRleHRdIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBwYWRkaW5nOiAxMHB4IDIwcHg7XHJcbiAgLyogZm9udC1zaXplOiAxNHB4OyAqL1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7XHJcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xyXG59XHJcbi5mb3JtLWNoZWNrLWlucHV0IHtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgd2lkdGg6IDMwcHg7XHJcbiAgaGVpZ2h0OiAzMHB4O1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxufVxyXG5cclxuaW5wdXQjZGF0ZSxcclxuaW5wdXQjY2N2LFxyXG5pbnB1dCN0ZXh0LFxyXG5pbnB1dCNjYXJkTnVtYmVyLFxyXG5zZWxlY3QjYm9va2luZ1R5cGUsXHJcbmlucHV0I2V4cGlyeURhdGUsXHJcbmlucHV0I25hbWUge1xyXG4gIHBhZGRpbmc6IDEwcHggMTBweDtcclxuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbn1cclxuXHJcbi5jYXJkLWRldGFpbHMgbGFiZWwge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgLyogZm9udC1zaXplOiAxNXB4OyAqL1xyXG59XHJcblxyXG4uY2FyZF9zdWJtaXQge1xyXG4gIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uYWRkaXRpb25hbF9zZXJ2aWNlcyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAvKiBwYWRkaW5nOiAxMHB4IDEwcHg7ICovXHJcbn1cclxuXHJcbmlucHV0I1xcMzMsXHJcbmlucHV0I1xcMzIsXHJcbmlucHV0I1xcMzEge1xyXG4gIGhlaWdodDogMjBweDtcclxuICB3aWR0aDogMjBweDtcclxuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbn1cclxuXHJcbmlucHV0I3RvdGFsUHJpY2Uge1xyXG4gIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG5cclxuLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG5cclxuaDIge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG4gIGZvbnQtd2VpZ2h0OiA4MDA7XHJcbiAgY29sb3I6ICMyMDg2Nzg7XHJcbiAgY29sb3I6ICMyMDg2Nzg7XHJcbn1cclxuLmZvcm0tY2hlY2t7XHJcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcclxufVxyXG5cclxuXHJcbmxhYmVsIHtcclxuICBjb2xvcjogIzIwODY3ODtcclxufVxyXG5cclxuLmJ0biB7XHJcbiAgZm9udC1zaXplOiAyNHB4O1xyXG4gIHBhZGRpbmc6IDEwcHggNDBweDtcclxufVxyXG5cclxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMTk5cHgpIHtcclxuICBoMSB7XHJcbiAgICBmb250LXNpemU6IDU3cHg7XHJcbiAgfVxyXG5cclxuICBoMiB7XHJcbiAgICBmb250LXNpemU6IDM4cHg7XHJcbiAgfVxyXG5cclxuICBoMyB7XHJcbiAgICBmb250LXNpemU6IDM1cHg7XHJcbiAgfVxyXG5cclxuICBoNCB7XHJcbiAgICBmb250LXNpemU6IDI1cHg7XHJcbiAgfVxyXG5cclxuICBoNSB7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG4gIC50ZXh0LWRhbmdlciB7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgfVxyXG5cclxuICBoNiB7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG5cclxuICBwIHtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICB9XHJcblxyXG4gIGEge1xyXG4gICAgZm9udC1zaXplOiAyMHB4O1xyXG4gIH1cclxuICBsYWJlbHtcclxuICAgIGZvbnQtc2l6ZTogMjBweDtcclxuICB9XHJcbiAgLmZvcm0tY2hlY2staW5wdXQge1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gICAgd2lkdGg6IDIwcHg7XHJcbiAgICBoZWlnaHQ6IDIwcHg7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XHJcbiAgfVxyXG5cclxuICBpbnB1dCNkYXRlLFxyXG4gIGlucHV0I2NjdixcclxuICBpbnB1dCN0ZXh0LFxyXG4gIGlucHV0I2NhcmROdW1iZXIsXHJcbiAgc2VsZWN0I2Jvb2tpbmdUeXBlLFxyXG4gIGlucHV0I2V4cGlyeURhdGUsXHJcbiAgaW5wdXQjbmFtZSB7XHJcbiAgICBwYWRkaW5nOiA1cHggNHB4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMDtcclxuICAgIG1hcmdpbi10b3A6IDEwcHg7XHJcbiAgfVxyXG59XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDk5MXB4KSB7XHJcblxyXG4gIGlucHV0I2RhdGUsXHJcbiAgaW5wdXQjY2N2LFxyXG4gIGlucHV0I3RleHQsXHJcbiAgaW5wdXQjY2FyZE51bWJlcixcclxuICBzZWxlY3QjYm9va2luZ1R5cGUsXHJcbiAgaW5wdXQjZXhwaXJ5RGF0ZSxcclxuICBpbnB1dCNuYW1lIHtcclxuICAgIHBhZGRpbmc6IDEwcHggMTBweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDA7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbiAgfVxyXG4gIGxhYmVse1xyXG4gICAgZm9udC1zaXplOiAxOHB4O1xyXG4gIH1cclxuXHJcbn1cclxuXHJcbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY3cHgpIHt9XHJcblxyXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDU3NXB4KSB7XHJcbiAgaDEge1xyXG4gICAgZm9udC1zaXplOiAzNXB4O1xyXG4gIH1cclxuXHJcbiAgaDIge1xyXG4gICAgZm9udC1zaXplOiAzMnB4O1xyXG4gICAgXHJcbiAgfVxyXG4gIC50ZXh0LWRhbmdlciB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgfVxyXG5cclxuICBwIHtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICB9XHJcblxyXG4gIGxhYmVsIHtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDBweDtcclxuICB9XHJcblxyXG4gIC5mb3JtLWNvbnRyb2wge1xyXG4gICAgZm9udC1zaXplOiAxNXB4O1xyXG4gIH1cclxuXHJcbiAgc2VsZWN0LFxyXG4gIGlucHV0W3R5cGU9XCJ0ZXh0XCJdIHtcclxuICAgIGZvbnQtc2l6ZTogMTJweDtcclxuICB9XHJcblxyXG4gIC5idG4ge1xyXG4gICAgZm9udC1zaXplOiAxNXB4O1xyXG4gICAgcGFkZGluZzogNnB4IDI0cHg7XHJcbiAgfVxyXG4gIC5wYXltZW50e1xyXG4gICAgcGFkZGluZzogMTBweDtcclxuICAgIFxyXG59XHJcblxyXG4gIC5wYXltZW50X3RleHQge1xyXG4gICAgbWFyZ2luLXRvcDogMDtcclxuICB9XHJcbiAgLmNhcmQtZGV0YWlscyBsYWJlbCB7XHJcbiAgICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XHJcbiAgICAvKiBmb250LXNpemU6IDE1cHg7ICovXHJcbiAgfVxyXG4gIGlucHV0I2RhdGVbX25nY29udGVudC1uZy1jNDQ3MzU2MTVdLCBpbnB1dCNjY3ZbX25nY29udGVudC1uZy1jNDQ3MzU2MTVdLCBpbnB1dCN0ZXh0W19uZ2NvbnRlbnQtbmctYzQ0NzM1NjE1XSwgaW5wdXQjY2FyZE51bWJlcltfbmdjb250ZW50LW5nLWM0NDczNTYxNV0sIHNlbGVjdCNib29raW5nVHlwZVtfbmdjb250ZW50LW5nLWM0NDczNTYxNV0sIGlucHV0I2V4cGlyeURhdGVbX25nY29udGVudC1uZy1jNDQ3MzU2MTVdLCBpbnB1dCNuYW1lW19uZ2NvbnRlbnQtbmctYzQ0NzM1NjE1XSB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xyXG4gICAgbWFyZ2luLXRvcDogMDtcclxufVxyXG5cclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
   });
 }
@@ -4040,8 +3998,8 @@ class RoomsComponent {
     return 1; // Adjust based on your business logic
   }
   isFormValid() {
-    // Check if each room has adults selected, and if each room has at least one additional charge selected or no additional charges
-    return this.rooms.every(room => room.adults > 0 && room.children >= 0) && this.rooms.every(room => Object.values(room.additionalCharges).some(isChecked => isChecked));
+    // Add any additional form validation logic if needed
+    return true;
   }
   submitRoomForm(form) {
     if (form.valid && this.isFormValid()) {
