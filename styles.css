@@ -1,10 +1,40 @@
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css?ngGlobalStyle ***!
   \**********************************************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/styles.css?ngGlobalStyle (1) ***!
+  \**************************************************************************************************************************************************************************************************************************/
 body {
     margin: 0;
     color: black;
+    font-family: "Public Sans", sans-serif;
   }
+h1{
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 70px;
+}
+h3{
+    font-size: 60px;
+}
+h4{
+    font-size: 40px;
+}
+h5{
+    font-size: 30px;
+}
+h6{
+    font-size: 20px;
+}
+p{
+    font-size: 24px;
+}
+ a{
+  font-size: 24px;
+}
   
   body:not(.dark-mode-preloading) {
     transition: all 0.3s linear;
@@ -88,8 +118,31 @@ body {
   }
   
  .dark-mode .tm-item h3 {
-   
     color: white;
+}
+.dark-mode .designed {
+  background-color: #208678;
+}
+.light-mode .designed {
+  background-color: white;
+}
+.light-mode .testimonial{
+  background-color: #f3fcfb;
+}
+.dark-mode .testimonial{
+  background-color: #208678;
+}
+.dark-mode .testimonial h2{
+  color: #4b4b4b;
+}
+.light-mode .testimonial h2{
+  color: black;
+}
+.light-mode .subtitle .title:before{
+  background: #208678;
+}
+.dark-mode .subtitle .title:before{
+  background: white;
 }
 .dark-mode a{
   color: white;
@@ -175,6 +228,45 @@ body {
   background-color: #f3f3f3;
  } */
 
+ .dark-mode .design_text h5{
+  color: white;
+}
+.light-mode .design_text h5{
+  color: #208678;
+}
+.dark-mode .testimonial .card {
+  background-color: #208678;
+}
+.light-mode .testimonial .card {
+  background-color: #f3fcfb;
+}
+.light-mode .testimonial .card_2 {
+  background-color: #f3fcfb;
+}
+.dark-mode .testimonial .card_2 {
+  background-color: #208678;
+}
+.dark-mode .testimonial h5{
+  color: white;
+}
+.light-mode .testimonial h5{
+  color: #208678;
+}
+.light-mode .subtitle .title:before {
+  background: #208678;
+}
+.dark-mode .subtitle .title:before {
+  background: white;
+}
+.dark-mode .steps-column {
+  filter: brightness(0.8);
+}
+.hotel-info p {
+  color: black;
+}
+
+
+
  .light-mode .ql-toolbar.ql-snow .ql-picker-label {
   border: 1px solid transparent;
   color: black;
@@ -214,6 +306,63 @@ body.dark-mode img.card_img {
 body.dark-mode img.sec_img{
   filter: brightness(1.1);
 }
+/* .light-mode .destination {
+  background-color: #3ac1ae33;
+}
+.light-mode .date{
+  background-color: #3ac1ae33;
+}
+.light-mode .list{
+  background-color: #3ac1ae33;
+}
+.light-mode .payment{
+  background-color: #3ac1ae33;
+}
+.light-mode .rooms{
+  background-color: #3ac1ae33;
+} */
+/* .dark-mode .destination {
+  background-color: white;
+}
+.dark-mode .date{
+  background-color: white;
+}
+.dark-mode .rooms{
+  background-color: white;
+}
+.dark-mode .list{
+  background-color: white;
+}
+.dark-mode .payment{
+  background-color: white;
+} */
+.light-mode .form-column {
+  background-color: #3ac1ae33;
+}
+.dark-mode .form-column
+{
+  background-color: white;
+}
+ .dark-mode .check{
+  background: #208670;
+}
+.light-mode .check{
+  background: #F8FAF5;
+  
+}
+.light-mode .checks h1 {
+  color: #4CAF50;
+}
+.dark-mode .checks h1 {
+  color: white;
+}
+
+.dark-mode .check i{
+  color: white;
+}
+
+@media only screen and (min-width: 1441px) {}
+@media only screen and (max-width: 1199px) {}
 
 @media only screen and (max-width: 991px) {
 .light-mode .navbar-nav {
@@ -235,6 +384,12 @@ body.dark-mode img.sec_img{
 .dark-mode .testimonial .card {
   background-color: #208678;
 }
+}
+@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 565px) {
+  a, p, label{
+    font-size: 18px;
+  }
 }
 /*!**********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/quill/dist/quill.snow.css?ngGlobalStyle ***!
